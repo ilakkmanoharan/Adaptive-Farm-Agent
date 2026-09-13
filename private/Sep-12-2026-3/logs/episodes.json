@@ -1,0 +1,527 @@
+[
+  {
+    "label": "s2",
+    "submission_id": 56197392,
+    "id": 108397773,
+    "create_time": "2026-09-13 03:14:39.091000",
+    "end_time": "2026-09-13 03:18:14.808000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55871166,
+        "reward": 6296,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "XiaozhenWu2002"
+      },
+      {
+        "index": 1,
+        "submission_id": 56197392,
+        "reward": 38311,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      }
+    ]
+  },
+  {
+    "label": "s2",
+    "submission_id": 56197392,
+    "id": 108396757,
+    "create_time": "2026-09-13 03:10:38.430000",
+    "end_time": "2026-09-13 03:15:20.016000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56197392,
+        "reward": 39949,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      },
+      {
+        "index": 1,
+        "submission_id": 55262061,
+        "reward": 7803,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Sreesanth M S"
+      }
+    ]
+  },
+  {
+    "label": "s2",
+    "submission_id": 56197392,
+    "id": 108395692,
+    "create_time": "2026-09-13 03:06:46.026000",
+    "end_time": "2026-09-13 03:08:46.575000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56048129,
+        "reward": 32424,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Jiri Prudky"
+      },
+      {
+        "index": 1,
+        "submission_id": 56197392,
+        "reward": 28010,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      }
+    ]
+  },
+  {
+    "label": "s2",
+    "submission_id": 56197392,
+    "id": 108394646,
+    "create_time": "2026-09-13 03:02:52.088000",
+    "end_time": "2026-09-13 03:05:46.674000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55784735,
+        "reward": 55950,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "kekuru"
+      },
+      {
+        "index": 1,
+        "submission_id": 56197392,
+        "reward": 29056,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      }
+    ]
+  },
+  {
+    "label": "s2",
+    "submission_id": 56197392,
+    "id": 108393607,
+    "create_time": "2026-09-13 02:58:42.617000",
+    "end_time": "2026-09-13 03:01:48.416000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56197392,
+        "reward": 33649,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      },
+      {
+        "index": 1,
+        "submission_id": 55416591,
+        "reward": 119594,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Neo_0x3f"
+      }
+    ]
+  },
+  {
+    "label": "s2",
+    "submission_id": 56197392,
+    "id": 108392591,
+    "create_time": "2026-09-13 02:54:43.085000",
+    "end_time": "2026-09-13 02:59:14.542000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56148216,
+        "reward": 36196,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "giraffeneck"
+      },
+      {
+        "index": 1,
+        "submission_id": 56197392,
+        "reward": 34380,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      }
+    ]
+  },
+  {
+    "label": "s2",
+    "submission_id": 56197392,
+    "id": 108391606,
+    "create_time": "2026-09-13 02:50:42.822000",
+    "end_time": "2026-09-13 02:53:27.907000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56197392,
+        "reward": 34753,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      },
+      {
+        "index": 1,
+        "submission_id": 55578353,
+        "reward": 77598,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Shobha Vashishtha"
+      }
+    ]
+  },
+  {
+    "label": "s2",
+    "submission_id": 56197392,
+    "id": 108390395,
+    "create_time": "2026-09-13 02:43:56.089000",
+    "end_time": "2026-09-13 02:48:14.563000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_VALIDATION",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56197392,
+        "reward": 34073,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      },
+      {
+        "index": 1,
+        "submission_id": 56197392,
+        "reward": 34073,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      }
+    ]
+  },
+  {
+    "label": "v1",
+    "submission_id": 56197136,
+    "id": 108397790,
+    "create_time": "2026-09-13 03:14:39.109000",
+    "end_time": "2026-09-13 03:19:23.657000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56197136,
+        "reward": 20953,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      },
+      {
+        "index": 1,
+        "submission_id": 55880009,
+        "reward": 50639,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "HarryZ"
+      }
+    ]
+  },
+  {
+    "label": "v1",
+    "submission_id": 56197136,
+    "id": 108395758,
+    "create_time": "2026-09-13 03:06:46.115000",
+    "end_time": "2026-09-13 03:15:26.422000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56190986,
+        "reward": 109301,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "__Taichicchi__"
+      },
+      {
+        "index": 1,
+        "submission_id": 56197136,
+        "reward": 22088,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      }
+    ]
+  },
+  {
+    "label": "v1",
+    "submission_id": 56197136,
+    "id": 108396764,
+    "create_time": "2026-09-13 03:10:38.440000",
+    "end_time": "2026-09-13 03:12:15.394000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56197136,
+        "reward": 21605,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      },
+      {
+        "index": 1,
+        "submission_id": 55534999,
+        "reward": 17057,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Shrey Modi"
+      }
+    ]
+  },
+  {
+    "label": "v1",
+    "submission_id": 56197136,
+    "id": 108394690,
+    "create_time": "2026-09-13 03:02:52.180000",
+    "end_time": "2026-09-13 03:04:18.618000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56197136,
+        "reward": 19663,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      },
+      {
+        "index": 1,
+        "submission_id": 56134426,
+        "reward": 15411,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Andrew Kalita"
+      }
+    ]
+  },
+  {
+    "label": "v1",
+    "submission_id": 56197136,
+    "id": 108393692,
+    "create_time": "2026-09-13 02:58:42.942000",
+    "end_time": "2026-09-13 03:01:45.134000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56197136,
+        "reward": 14898,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      },
+      {
+        "index": 1,
+        "submission_id": 55150137,
+        "reward": 55331,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "zhangende02"
+      }
+    ]
+  },
+  {
+    "label": "v1",
+    "submission_id": 56197136,
+    "id": 108392682,
+    "create_time": "2026-09-13 02:54:43.208000",
+    "end_time": "2026-09-13 02:58:04.738000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55310756,
+        "reward": 15076,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Steven Pun"
+      },
+      {
+        "index": 1,
+        "submission_id": 56197136,
+        "reward": 17759,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      }
+    ]
+  },
+  {
+    "label": "v1",
+    "submission_id": 56197136,
+    "id": 108391646,
+    "create_time": "2026-09-13 02:50:42.895000",
+    "end_time": "2026-09-13 02:53:48.809000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55236599,
+        "reward": 10326,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "dharssshiniii"
+      },
+      {
+        "index": 1,
+        "submission_id": 56197136,
+        "reward": 21487,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      }
+    ]
+  },
+  {
+    "label": "v1",
+    "submission_id": 56197136,
+    "id": 108390737,
+    "create_time": "2026-09-13 02:46:41.974000",
+    "end_time": "2026-09-13 02:49:11.327000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56197136,
+        "reward": 16855,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      },
+      {
+        "index": 1,
+        "submission_id": 55260214,
+        "reward": 49220,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Qui Ngx"
+      }
+    ]
+  },
+  {
+    "label": "v1",
+    "submission_id": 56197136,
+    "id": 108389607,
+    "create_time": "2026-09-13 02:42:43.348000",
+    "end_time": "2026-09-13 02:43:56.474000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55275271,
+        "reward": 10592,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Krish Singh"
+      },
+      {
+        "index": 1,
+        "submission_id": 56197136,
+        "reward": 23374,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      }
+    ]
+  },
+  {
+    "label": "v1",
+    "submission_id": 56197136,
+    "id": 108388565,
+    "create_time": "2026-09-13 02:38:44.839000",
+    "end_time": "2026-09-13 02:42:03.803000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56149298,
+        "reward": 28423,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Asuka"
+      },
+      {
+        "index": 1,
+        "submission_id": 56197136,
+        "reward": 20151,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      }
+    ]
+  },
+  {
+    "label": "v1",
+    "submission_id": 56197136,
+    "id": 108387547,
+    "create_time": "2026-09-13 02:34:44.508000",
+    "end_time": "2026-09-13 02:37:34.016000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55440834,
+        "reward": 116565,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ethan Pl"
+      },
+      {
+        "index": 1,
+        "submission_id": 56197136,
+        "reward": 22697,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      }
+    ]
+  },
+  {
+    "label": "v1",
+    "submission_id": 56197136,
+    "id": 108386562,
+    "create_time": "2026-09-13 02:30:38.701000",
+    "end_time": "2026-09-13 02:34:24.974000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56197136,
+        "reward": 18986,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      },
+      {
+        "index": 1,
+        "submission_id": 55875154,
+        "reward": 163919,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Sergey Panasenko"
+      }
+    ]
+  },
+  {
+    "label": "v1",
+    "submission_id": 56197136,
+    "id": 108385343,
+    "create_time": "2026-09-13 02:26:24.505000",
+    "end_time": "2026-09-13 02:30:35.192000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_VALIDATION",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56197136,
+        "reward": 26730,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      },
+      {
+        "index": 1,
+        "submission_id": 56197136,
+        "reward": 20955,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan"
+      }
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "id": 108387547,
+    "create_time": "2026-09-13 02:34:44.508000",
+    "end_time": "2026-09-13 02:37:34.016000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55440834,
+        "reward": 116565,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ethan Pl",
+        "team_id": 16702359
+      },
+      {
+        "index": 1,
+        "submission_id": 56197136,
+        "reward": 22697,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan",
+        "team_id": 16883962
+      }
+    ]
+  },
+  {
+    "id": 108386562,
+    "create_time": "2026-09-13 02:30:38.701000",
+    "end_time": "2026-09-13 02:34:24.974000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_PUBLIC",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56197136,
+        "reward": 18986,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan",
+        "team_id": 16883962
+      },
+      {
+        "index": 1,
+        "submission_id": 55875154,
+        "reward": 163919,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Sergey Panasenko",
+        "team_id": 16738805
+      }
+    ]
+  },
+  {
+    "id": 108385343,
+    "create_time": "2026-09-13 02:26:24.505000",
+    "end_time": "2026-09-13 02:30:35.192000",
+    "state": "EpisodeState.COMPLETED",
+    "type": "EpisodeType.EPISODE_TYPE_VALIDATION",
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56197136,
+        "reward": 26730,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan",
+        "team_id": 16883962
+      },
+      {
+        "index": 1,
+        "submission_id": 56197136,
+        "reward": 20955,
+        "state": "EpisodeAgentState.EPISODE_AGENT_STATE_UNSPECIFIED",
+        "team_name": "Ilakk manoharan",
+        "team_id": 16883962
+      }
+    ]
+  }
+]

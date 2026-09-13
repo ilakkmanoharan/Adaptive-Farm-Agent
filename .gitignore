@@ -1,0 +1,11 @@
+# Secrets stay local. Specs and loop state under private/ may be committed.
+/private/api-keys/
+/private/**/logs/*-replay.json
+/private/**/logs/*-agent-*.json
+/private/**/logs/*-logs.json
+
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+scripts/kagg_loop/.venv/

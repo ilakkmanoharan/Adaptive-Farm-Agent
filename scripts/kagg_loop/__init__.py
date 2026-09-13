@@ -1,0 +1,1 @@
+"""Unattended Kaggriculture submit loop (5 slots/day)."""

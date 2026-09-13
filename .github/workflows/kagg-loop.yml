@@ -1,0 +1,85 @@
+# Five Kaggriculture submits/day while this machine is off.
+# Local times are America/Chicago: 4am, 7am, 10am, 1pm, 3pm.
+# Cron is UTC for CDT (UTC-5), which covers the Sep 2026 deadline.
+name: kagg-loop
+
+on:
+  schedule:
+    - cron: "0 9 * * *"   # 4:00am
+    - cron: "0 12 * * *"  # 7:00am
+    - cron: "0 15 * * *"  # 10:00am
+    - cron: "0 18 * * *"  # 1:00pm
+    - cron: "0 20 * * *"  # 3:00pm
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Slot 1–5 (empty = clock)"
+        required: false
+      date:
+        description: "YYYY-MM-DD (empty = today in Chicago)"
+        required: false
+      skip_submit:
+        description: "Set to 1 to write spec/code but not upload"
+        required: false
+        default: "0"
+
+concurrency:
+  group: kagg-loop
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  slot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install loop deps
+        run: |
+          pip install kaggle
+          pip install cursor-sdk || echo "cursor-sdk optional; OpenAI fallback will implement"
+
+      - name: Kaggle credentials
+        run: |
+          mkdir -p "$HOME/.kaggle"
+          printf '%s\n' "{\"username\":\"$KAGGLE_USERNAME\",\"key\":\"$KAGGLE_KEY\"}" > "$HOME/.kaggle/kaggle.json"
+          chmod 600 "$HOME/.kaggle/kaggle.json"
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+
+      - name: Run one slot
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGG_LOOP_PUSH: "1"
+          KAGG_LOOP_CURSOR_RUNTIME: cloud
+          KAGG_LOOP_REPO_URL: https://github.com/${{ github.repository }}
+          TZ: America/Chicago
+        run: |
+          set -e
+          ARGS=()
+          if [ -n "${{ github.event.inputs.slot }}" ]; then
+            ARGS+=(--slot "${{ github.event.inputs.slot }}")
+          fi
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            ARGS+=(--date "${{ github.event.inputs.date }}")
+          fi
+          if [ "${{ github.event.inputs.skip_submit }}" = "1" ]; then
+            ARGS+=(--skip-submit)
+          fi
+          python3 scripts/kagg_loop/orchestrate.py "${ARGS[@]}"

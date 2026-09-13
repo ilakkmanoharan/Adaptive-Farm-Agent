@@ -1,0 +1,4090 @@
+[
+  {
+    "file": "episode-108387547-replay.json",
+    "episode": 108387547,
+    "names": [
+      "Ethan Pl",
+      "Ilakk manoharan"
+    ],
+    "rewards": [
+      116565.0,
+      22697.0
+    ],
+    "us_index": 1,
+    "daily": [
+      {
+        "step": 0,
+        "day": 0,
+        "hour": 0,
+        "p0": {
+          "money": 3000.0,
+          "hands": 0,
+          "quads": [
+            "NW"
+          ],
+          "plants": {},
+          "herd": {},
+          "weeds": 0,
+          "empty": 25,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 3000.0,
+          "hands": 0,
+          "quads": [
+            "NW"
+          ],
+          "plants": {},
+          "herd": {},
+          "weeds": 0,
+          "empty": 25,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 23,
+        "day": 0,
+        "hour": 23,
+        "p0": {
+          "money": 539.0,
+          "hands": 3,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "MELON": 4,
+            "WHEAT": 5
+          },
+          "herd": {
+            "SHEEP": 3,
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 2506.0,
+          "hands": 3,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 6,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 14,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 47,
+        "day": 1,
+        "hour": 23,
+        "p0": {
+          "money": 346.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "MELON": 4,
+            "WHEAT": 12
+          },
+          "herd": {
+            "SHEEP": 3,
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 4,
+          "locked": 75,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 2502.0,
+          "hands": 3,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 6,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 14,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 71,
+        "day": 2,
+        "hour": 23,
+        "p0": {
+          "money": 548.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "MELON": 4,
+            "WHEAT": 14
+          },
+          "herd": {
+            "SHEEP": 3,
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 2,
+          "locked": 75,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 2470.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 95,
+        "day": 3,
+        "hour": 23,
+        "p0": {
+          "money": 894.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "MELON": 4,
+            "WHEAT": 15
+          },
+          "herd": {
+            "SHEEP": 3,
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 1,
+          "locked": 75,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 2458.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 119,
+        "day": 4,
+        "hour": 23,
+        "p0": {
+          "money": 856.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "MELON": 4,
+            "WHEAT": 11,
+            "STRAWBERRY": 4
+          },
+          "herd": {
+            "SHEEP": 3,
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 1,
+          "locked": 75,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 2856.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 143,
+        "day": 5,
+        "hour": 23,
+        "p0": {
+          "money": 608.0,
+          "hands": 7,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "MELON": 4,
+            "WHEAT": 7,
+            "STRAWBERRY": 8
+          },
+          "herd": {
+            "SHEEP": 3,
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 1,
+          "locked": 75,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 2844.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 167,
+        "day": 6,
+        "hour": 23,
+        "p0": {
+          "money": 369.0,
+          "hands": 7,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "MELON": 4,
+            "WHEAT": 6,
+            "STRAWBERRY": 9
+          },
+          "herd": {
+            "SHEEP": 3,
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 1,
+          "locked": 75,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 2812.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 191,
+        "day": 7,
+        "hour": 23,
+        "p0": {
+          "money": 1251.0,
+          "hands": 7,
+          "quads": [
+            "NW",
+            "NE"
+          ],
+          "plants": {
+            "MELON": 4,
+            "WHEAT": 11,
+            "STRAWBERRY": 11
+          },
+          "herd": {
+            "SHEEP": 3,
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 14,
+          "locked": 50,
+          "empty_struct": 5
+        },
+        "p1": {
+          "money": 2512.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 215,
+        "day": 8,
+        "hour": 23,
+        "p0": {
+          "money": 1095.0,
+          "hands": 9,
+          "quads": [
+            "NW",
+            "NE"
+          ],
+          "plants": {
+            "MELON": 4,
+            "WHEAT": 20,
+            "STRAWBERRY": 12
+          },
+          "herd": {
+            "SHEEP": 3,
+            "COW": 3
+          },
+          "weeds": 0,
+          "empty": 4,
+          "locked": 50,
+          "empty_struct": 4
+        },
+        "p1": {
+          "money": 2965.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 11,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 239,
+        "day": 9,
+        "hour": 23,
+        "p0": {
+          "money": 1007.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE"
+          ],
+          "plants": {
+            "MELON": 4,
+            "WHEAT": 17,
+            "STRAWBERRY": 16
+          },
+          "herd": {
+            "COW": 6,
+            "SHEEP": 3
+          },
+          "weeds": 0,
+          "empty": 3,
+          "locked": 50,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 2545.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 263,
+        "day": 10,
+        "hour": 23,
+        "p0": {
+          "money": 2397.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE"
+          ],
+          "plants": {
+            "WHEAT": 20,
+            "STRAWBERRY": 16
+          },
+          "herd": {
+            "COW": 7,
+            "SHEEP": 3
+          },
+          "weeds": 0,
+          "empty": 4,
+          "locked": 50,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 6550.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 4
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 287,
+        "day": 11,
+        "hour": 23,
+        "p0": {
+          "money": 2249.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE"
+          ],
+          "plants": {
+            "WHEAT": 17,
+            "STRAWBERRY": 17,
+            "MELON": 3
+          },
+          "herd": {
+            "COW": 7,
+            "SHEEP": 3
+          },
+          "weeds": 0,
+          "empty": 3,
+          "locked": 50,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 7602.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 311,
+        "day": 12,
+        "hour": 23,
+        "p0": {
+          "money": 2435.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE"
+          ],
+          "plants": {
+            "WHEAT": 16,
+            "STRAWBERRY": 17,
+            "MELON": 3
+          },
+          "herd": {
+            "COW": 7,
+            "SHEEP": 3
+          },
+          "weeds": 0,
+          "empty": 4,
+          "locked": 50,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 7648.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 335,
+        "day": 13,
+        "hour": 23,
+        "p0": {
+          "money": 2764.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 18,
+            "STRAWBERRY": 18,
+            "MELON": 3
+          },
+          "herd": {
+            "COW": 8,
+            "SHEEP": 3
+          },
+          "weeds": 0,
+          "empty": 25,
+          "locked": 25,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 7922.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 359,
+        "day": 14,
+        "hour": 23,
+        "p0": {
+          "money": 3033.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 27,
+            "STRAWBERRY": 19,
+            "MELON": 3
+          },
+          "herd": {
+            "COW": 9,
+            "SHEEP": 3
+          },
+          "weeds": 0,
+          "empty": 12,
+          "locked": 25,
+          "empty_struct": 2
+        },
+        "p1": {
+          "money": 7991.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 383,
+        "day": 15,
+        "hour": 23,
+        "p0": {
+          "money": 5769.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 22,
+            "STRAWBERRY": 20,
+            "MELON": 3
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 2,
+          "empty": 14,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 8023.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 407,
+        "day": 16,
+        "hour": 23,
+        "p0": {
+          "money": 11253.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 23,
+            "STRAWBERRY": 20,
+            "MELON": 1
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 3,
+          "empty": 14,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 8669.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 9,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 431,
+        "day": 17,
+        "hour": 23,
+        "p0": {
+          "money": 21648.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 24,
+            "STRAWBERRY": 21,
+            "MELON": 1
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 3,
+          "empty": 12,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 10440.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 455,
+        "day": 18,
+        "hour": 23,
+        "p0": {
+          "money": 28008.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 18,
+            "STRAWBERRY": 21,
+            "MELON": 1
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 4,
+          "empty": 17,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 10420.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 479,
+        "day": 19,
+        "hour": 23,
+        "p0": {
+          "money": 36386.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 21,
+            "STRAWBERRY": 22,
+            "MELON": 1
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 1,
+          "empty": 16,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 11350.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 503,
+        "day": 20,
+        "hour": 23,
+        "p0": {
+          "money": 43057.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 22,
+            "STRAWBERRY": 22,
+            "MELON": 1
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 2,
+          "empty": 14,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 14532.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10,
+            "MELON": 2
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 527,
+        "day": 21,
+        "hour": 23,
+        "p0": {
+          "money": 47700.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 25,
+            "STRAWBERRY": 18,
+            "MELON": 1
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 1,
+          "empty": 16,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 18106.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 551,
+        "day": 22,
+        "hour": 23,
+        "p0": {
+          "money": 58104.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 30,
+            "STRAWBERRY": 13
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 3,
+          "empty": 15,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 18234.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 575,
+        "day": 23,
+        "hour": 23,
+        "p0": {
+          "money": 64092.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 31,
+            "STRAWBERRY": 10
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 4,
+          "empty": 16,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 18258.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 599,
+        "day": 24,
+        "hour": 23,
+        "p0": {
+          "money": 71135.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 28,
+            "STRAWBERRY": 8
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 5,
+          "empty": 20,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 19549.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 623,
+        "day": 25,
+        "hour": 23,
+        "p0": {
+          "money": 78405.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 32,
+            "STRAWBERRY": 7
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 4,
+          "empty": 18,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 20283.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 18,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 647,
+        "day": 26,
+        "hour": 23,
+        "p0": {
+          "money": 86948.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 24,
+            "STRAWBERRY": 5
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 3,
+          "empty": 29,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 21083.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 18,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 671,
+        "day": 27,
+        "hour": 23,
+        "p0": {
+          "money": 94298.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 22,
+            "STRAWBERRY": 5
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 1,
+          "empty": 33,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 21234.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 3
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 20,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 695,
+        "day": 28,
+        "hour": 23,
+        "p0": {
+          "money": 106577.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "STRAWBERRY": 5
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 1,
+          "empty": 46,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 22063.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {},
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 23,
+          "locked": 75,
+          "empty_struct": 1
+        }
+      },
+      {
+        "step": 719,
+        "day": 29,
+        "hour": 23,
+        "p0": {
+          "money": 116565.0,
+          "hands": 0,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "WHEAT": 6,
+            "STRAWBERRY": 5
+          },
+          "herd": {
+            "COW": 10,
+            "SHEEP": 3
+          },
+          "weeds": 4,
+          "empty": 46,
+          "locked": 25,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 22697.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {},
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 23,
+          "locked": 75,
+          "empty_struct": 1
+        }
+      }
+    ],
+    "actions": [
+      {
+        "WEST": 1152,
+        "EAST": 947,
+        "WATER": 876,
+        "PASS": 866,
+        "NORTH": 746,
+        "SOUTH": 411,
+        "HARVEST": 323,
+        "FEED": 271,
+        "CARE": 270,
+        "COLLECT_FERTILIZER": 268,
+        "PLANT": 171,
+        "PICKUP": 118,
+        "FERTILIZE": 69,
+        "DIG": 46,
+        "DROP": 24,
+        "BUILD_PASTURE": 14,
+        "PLACE": 13
+      },
+      {
+        "PASS": 1711,
+        "NORTH": 408,
+        "PICKUP": 402,
+        "WEST": 377,
+        "SOUTH": 332,
+        "WATER": 301,
+        "EAST": 234,
+        "DROP": 212,
+        "PLANT": 66,
+        "HARVEST": 66,
+        "COLLECT_FERTILIZER": 27,
+        "FEED": 21,
+        "CARE": 21,
+        "DIG": 10,
+        "FERTILIZE": 5,
+        "BUILD_PASTURE": 2,
+        "PLACE": 2
+      }
+    ],
+    "market": [
+      {
+        "('HIRE',)": 255,
+        "('SELL', 'MILK')": 199,
+        "('SELL', 'FERTILIZER')": 196,
+        "('BUY_SEED', 'WHEAT')": 141,
+        "('SELL', 'WHEAT')": 114,
+        "('SELL', 'STRAWBERRY')": 111,
+        "('BUY_PRODUCT', 'WHEAT')": 100,
+        "('SELL', 'WOOL')": 93,
+        "('SELL', 'MELON')": 24,
+        "('BUY_SEED', 'STRAWBERRY')": 23,
+        "('BUY_SEED', 'MELON')": 11,
+        "('BUY_ANIMAL', 'COW')": 10,
+        "('BUY_ANIMAL', 'SHEEP')": 3,
+        "('BUY_LAND',)": 2
+      },
+      {
+        "('HIRE',)": 169,
+        "('SELL', 'WHEAT')": 159,
+        "('BUY_SEED', 'WHEAT')": 59,
+        "('SELL', 'MELON')": 44,
+        "('SELL', 'FERTILIZER')": 21,
+        "('SELL', 'MILK')": 19,
+        "('BUY_SEED', 'MELON')": 10,
+        "('BUY_ANIMAL', 'COW')": 2
+      }
+    ]
+  },
+  {
+    "file": "episode-108386562-replay.json",
+    "episode": 108386562,
+    "names": [
+      "Ilakk manoharan",
+      "Sergey Panasenko"
+    ],
+    "rewards": [
+      18986.0,
+      163919.0
+    ],
+    "us_index": 0,
+    "daily": [
+      {
+        "step": 0,
+        "day": 0,
+        "hour": 0,
+        "p0": {
+          "money": 3000.0,
+          "hands": 0,
+          "quads": [
+            "NW"
+          ],
+          "plants": {},
+          "herd": {},
+          "weeds": 0,
+          "empty": 25,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 3000.0,
+          "hands": 0,
+          "quads": [
+            "NW"
+          ],
+          "plants": {},
+          "herd": {},
+          "weeds": 0,
+          "empty": 25,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 23,
+        "day": 0,
+        "hour": 23,
+        "p0": {
+          "money": 2506.0,
+          "hands": 3,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 6,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 14,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 234.0,
+          "hands": 4,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "MELON": 15,
+            "WHEAT": 6,
+            "CARROT": 1
+          },
+          "herd": {
+            "SHEEP": 2,
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 0,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 47,
+        "day": 1,
+        "hour": 23,
+        "p0": {
+          "money": 2502.0,
+          "hands": 3,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 6,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 14,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 152.0,
+          "hands": 0,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "MELON": 15,
+            "WHEAT": 6,
+            "CARROT": 1
+          },
+          "herd": {
+            "SHEEP": 2,
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 0,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 71,
+        "day": 2,
+        "hour": 23,
+        "p0": {
+          "money": 2470.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 366.0,
+          "hands": 2,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "MELON": 15,
+            "WHEAT": 6,
+            "CARROT": 1
+          },
+          "herd": {
+            "SHEEP": 2,
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 0,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 95,
+        "day": 3,
+        "hour": 23,
+        "p0": {
+          "money": 2458.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 575.0,
+          "hands": 1,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "MELON": 15,
+            "WHEAT": 6
+          },
+          "herd": {
+            "SHEEP": 2,
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 1,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 119,
+        "day": 4,
+        "hour": 23,
+        "p0": {
+          "money": 2843.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 456.0,
+          "hands": 3,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "MELON": 15
+          },
+          "herd": {
+            "COW": 2,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 6,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 143,
+        "day": 5,
+        "hour": 23,
+        "p0": {
+          "money": 2831.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 1024.0,
+          "hands": 1,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "MELON": 16,
+            "WHEAT": 3,
+            "STRAWBERRY": 1
+          },
+          "herd": {
+            "COW": 2,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 1,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 167,
+        "day": 6,
+        "hour": 23,
+        "p0": {
+          "money": 2799.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 894.0,
+          "hands": 3,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "MELON": 16,
+            "WHEAT": 3,
+            "STRAWBERRY": 1
+          },
+          "herd": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 0,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 191,
+        "day": 7,
+        "hour": 23,
+        "p0": {
+          "money": 2471.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 2653.0,
+          "hands": 1,
+          "quads": [
+            "NW",
+            "NE"
+          ],
+          "plants": {
+            "MELON": 16,
+            "WHEAT": 3,
+            "STRAWBERRY": 1
+          },
+          "herd": {
+            "COW": 3,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 25,
+          "locked": 50,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 215,
+        "day": 8,
+        "hour": 23,
+        "p0": {
+          "money": 2812.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 11,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 1121.0,
+          "hands": 7,
+          "quads": [
+            "NW",
+            "NE"
+          ],
+          "plants": {
+            "MELON": 18,
+            "WHEAT": 15,
+            "STRAWBERRY": 4
+          },
+          "herd": {
+            "COW": 6,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 5,
+          "locked": 50,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 239,
+        "day": 9,
+        "hour": 23,
+        "p0": {
+          "money": 2392.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 2125.0,
+          "hands": 4,
+          "quads": [
+            "NW",
+            "NE"
+          ],
+          "plants": {
+            "MELON": 18,
+            "WHEAT": 14,
+            "STRAWBERRY": 6
+          },
+          "herd": {
+            "COW": 7,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 3,
+          "locked": 50,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 263,
+        "day": 10,
+        "hour": 23,
+        "p0": {
+          "money": 6397.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 4
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 3566.0,
+          "hands": 6,
+          "quads": [
+            "NW",
+            "NE"
+          ],
+          "plants": {
+            "MELON": 18,
+            "WHEAT": 14,
+            "STRAWBERRY": 7
+          },
+          "herd": {
+            "COW": 9,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 0,
+          "locked": 50,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 287,
+        "day": 11,
+        "hour": 23,
+        "p0": {
+          "money": 7447.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 2771.0,
+          "hands": 6,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "MELON": 18,
+            "WHEAT": 14,
+            "STRAWBERRY": 7
+          },
+          "herd": {
+            "COW": 9,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 25,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 311,
+        "day": 12,
+        "hour": 23,
+        "p0": {
+          "money": 7470.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 6582.0,
+          "hands": 14,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 15,
+            "MELON": 4,
+            "WHEAT": 17,
+            "CARROT": 1
+          },
+          "herd": {
+            "COW": 9,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 27,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 335,
+        "day": 13,
+        "hour": 23,
+        "p0": {
+          "money": 7702.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 21387.0,
+          "hands": 8,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "MELON": 12,
+            "STRAWBERRY": 31,
+            "WHEAT": 15,
+            "CARROT": 1
+          },
+          "herd": {
+            "COW": 11,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 3,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 359,
+        "day": 14,
+        "hour": 23,
+        "p0": {
+          "money": 7768.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 21171.0,
+          "hands": 8,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 32,
+            "MELON": 12,
+            "WHEAT": 15,
+            "CARROT": 1
+          },
+          "herd": {
+            "COW": 13,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 0,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 383,
+        "day": 15,
+        "hour": 23,
+        "p0": {
+          "money": 7790.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 22181.0,
+          "hands": 8,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 32,
+            "MELON": 12,
+            "WHEAT": 15
+          },
+          "herd": {
+            "COW": 13,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 1,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 407,
+        "day": 16,
+        "hour": 23,
+        "p0": {
+          "money": 8356.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 1,
+          "empty": 8,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 24572.0,
+          "hands": 11,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 39,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 14,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 15,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 431,
+        "day": 17,
+        "hour": 23,
+        "p0": {
+          "money": 9925.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 31130.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 52,
+            "MELON": 4
+          },
+          "herd": {
+            "COW": 16,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 1,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 455,
+        "day": 18,
+        "hour": 23,
+        "p0": {
+          "money": 9905.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 33530.0,
+          "hands": 8,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 52,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 16,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 0,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 479,
+        "day": 19,
+        "hour": 23,
+        "p0": {
+          "money": 10699.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 42561.0,
+          "hands": 9,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 52,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 16,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 0,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 503,
+        "day": 20,
+        "hour": 23,
+        "p0": {
+          "money": 12981.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10,
+            "MELON": 2
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 43715.0,
+          "hands": 9,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 52,
+            "MELON": 3
+          },
+          "herd": {
+            "COW": 16,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 2,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 527,
+        "day": 21,
+        "hour": 23,
+        "p0": {
+          "money": 15177.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 51508.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 52,
+            "CARROT": 2,
+            "MELON": 3
+          },
+          "herd": {
+            "COW": 16,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 0,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 551,
+        "day": 22,
+        "hour": 23,
+        "p0": {
+          "money": 15288.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 58221.0,
+          "hands": 9,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 51,
+            "CARROT": 2,
+            "MELON": 3
+          },
+          "herd": {
+            "COW": 16,
+            "SHEEP": 2
+          },
+          "weeds": 1,
+          "empty": 0,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 575,
+        "day": 23,
+        "hour": 23,
+        "p0": {
+          "money": 15304.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 69454.0,
+          "hands": 11,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 51,
+            "CARROT": 3,
+            "MELON": 3
+          },
+          "herd": {
+            "COW": 16,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 0,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 599,
+        "day": 24,
+        "hour": 23,
+        "p0": {
+          "money": 16353.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 72313.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 51,
+            "MELON": 2,
+            "CARROT": 1
+          },
+          "herd": {
+            "COW": 16,
+            "SHEEP": 2
+          },
+          "weeds": 0,
+          "empty": 3,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 623,
+        "day": 25,
+        "hour": 23,
+        "p0": {
+          "money": 17042.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 18,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 85707.0,
+          "hands": 11,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 48,
+            "CARROT": 4,
+            "MELON": 1
+          },
+          "herd": {
+            "COW": 16,
+            "SHEEP": 2
+          },
+          "weeds": 3,
+          "empty": 1,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 647,
+        "day": 26,
+        "hour": 23,
+        "p0": {
+          "money": 17658.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 18,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 110056.0,
+          "hands": 11,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 46,
+            "CARROT": 7,
+            "MELON": 1
+          },
+          "herd": {
+            "COW": 16,
+            "SHEEP": 2
+          },
+          "weeds": 2,
+          "empty": 1,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 671,
+        "day": 27,
+        "hour": 23,
+        "p0": {
+          "money": 17800.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 3
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 20,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 121526.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 45,
+            "CARROT": 10,
+            "MELON": 1
+          },
+          "herd": {
+            "COW": 16,
+            "SHEEP": 2
+          },
+          "weeds": 1,
+          "empty": 0,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 695,
+        "day": 28,
+        "hour": 23,
+        "p0": {
+          "money": 18503.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {},
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 23,
+          "locked": 75,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 130183.0,
+          "hands": 11,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 45,
+            "CARROT": 7,
+            "MELON": 1
+          },
+          "herd": {
+            "COW": 16,
+            "SHEEP": 2
+          },
+          "weeds": 1,
+          "empty": 3,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 719,
+        "day": 29,
+        "hour": 23,
+        "p0": {
+          "money": 18986.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {},
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 23,
+          "locked": 75,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 163919.0,
+          "hands": 10,
+          "quads": [
+            "NW",
+            "NE",
+            "SW"
+          ],
+          "plants": {
+            "STRAWBERRY": 37
+          },
+          "herd": {
+            "COW": 16,
+            "SHEEP": 2
+          },
+          "weeds": 9,
+          "empty": 11,
+          "locked": 25,
+          "empty_struct": 0
+        }
+      }
+    ],
+    "actions": [
+      {
+        "PASS": 1714,
+        "NORTH": 407,
+        "PICKUP": 399,
+        "WEST": 378,
+        "SOUTH": 331,
+        "WATER": 300,
+        "EAST": 234,
+        "DROP": 212,
+        "PLANT": 66,
+        "HARVEST": 66,
+        "COLLECT_FERTILIZER": 27,
+        "FEED": 21,
+        "CARE": 21,
+        "DIG": 12,
+        "FERTILIZE": 5,
+        "BUILD_PASTURE": 2,
+        "PLACE": 2
+      },
+      {
+        "PASS": 1138,
+        "WATER": 796,
+        "NORTH": 690,
+        "WEST": 589,
+        "EAST": 473,
+        "FEED": 373,
+        "CARE": 373,
+        "COLLECT_FERTILIZER": 354,
+        "SOUTH": 323,
+        "HARVEST": 254,
+        "PICKUP": 220,
+        "PLANT": 133,
+        "FERTILIZE": 115,
+        "BUILD_PASTURE": 18,
+        "PLACE": 18,
+        "DIG": 14,
+        "DROP": 13
+      }
+    ],
+    "market": [
+      {
+        "('HIRE',)": 169,
+        "('SELL', 'WHEAT')": 159,
+        "('BUY_SEED', 'WHEAT')": 59,
+        "('SELL', 'MELON')": 44,
+        "('SELL', 'FERTILIZER')": 21,
+        "('SELL', 'MILK')": 19,
+        "('BUY_SEED', 'MELON')": 10,
+        "('BUY_ANIMAL', 'COW')": 2
+      },
+      {
+        "('BUY_PRODUCT', 'WHEAT')": 319,
+        "('SELL', 'MILK')": 316,
+        "('SELL', 'FERTILIZER')": 234,
+        "('SELL', 'STRAWBERRY')": 223,
+        "('HIRE',)": 216,
+        "('SELL', 'MELON')": 108,
+        "('SELL', 'WHEAT')": 98,
+        "('SELL', 'WOOL')": 68,
+        "('BUY_SEED', 'STRAWBERRY')": 52,
+        "('BUY_SEED', 'WHEAT')": 38,
+        "('SELL', 'CARROT')": 31,
+        "('BUY_SEED', 'MELON')": 28,
+        "('BUY_ANIMAL', 'COW')": 16,
+        "('BUY_SEED', 'CARROT')": 15,
+        "('BUY_PRODUCT', 'FERTILIZER')": 5,
+        "('BUY_ANIMAL', 'SHEEP')": 2,
+        "('BUY_LAND',)": 2
+      }
+    ]
+  },
+  {
+    "file": "episode-108385343-replay.json",
+    "episode": 108385343,
+    "names": [
+      "Ilakk manoharan",
+      "Ilakk manoharan"
+    ],
+    "rewards": [
+      26730.0,
+      20955.0
+    ],
+    "us_index": 0,
+    "daily": [
+      {
+        "step": 0,
+        "day": 0,
+        "hour": 0,
+        "p0": {
+          "money": 3000.0,
+          "hands": 0,
+          "quads": [
+            "NW"
+          ],
+          "plants": {},
+          "herd": {},
+          "weeds": 0,
+          "empty": 25,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 3000.0,
+          "hands": 0,
+          "quads": [
+            "NW"
+          ],
+          "plants": {},
+          "herd": {},
+          "weeds": 0,
+          "empty": 25,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 23,
+        "day": 0,
+        "hour": 23,
+        "p0": {
+          "money": 2506.0,
+          "hands": 3,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 6,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 14,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 2506.0,
+          "hands": 3,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 6,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 14,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 47,
+        "day": 1,
+        "hour": 23,
+        "p0": {
+          "money": 2502.0,
+          "hands": 3,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 6,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 14,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 2502.0,
+          "hands": 3,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 6,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 14,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 71,
+        "day": 2,
+        "hour": 23,
+        "p0": {
+          "money": 2470.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 2470.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 95,
+        "day": 3,
+        "hour": 23,
+        "p0": {
+          "money": 2458.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 2458.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 119,
+        "day": 4,
+        "hour": 23,
+        "p0": {
+          "money": 2765.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 2765.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 143,
+        "day": 5,
+        "hour": 23,
+        "p0": {
+          "money": 2753.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 2753.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 167,
+        "day": 6,
+        "hour": 23,
+        "p0": {
+          "money": 2721.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 2721.0,
+          "hands": 5,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 191,
+        "day": 7,
+        "hour": 23,
+        "p0": {
+          "money": 2389.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 2389.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 215,
+        "day": 8,
+        "hour": 23,
+        "p0": {
+          "money": 2639.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 2695.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {},
+          "weeds": 0,
+          "empty": 11,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 239,
+        "day": 9,
+        "hour": 23,
+        "p0": {
+          "money": 2284.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 9,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 2275.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 263,
+        "day": 10,
+        "hour": 23,
+        "p0": {
+          "money": 6647.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 9,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 6182.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 8,
+            "MELON": 4
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 287,
+        "day": 11,
+        "hour": 23,
+        "p0": {
+          "money": 6807.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 8,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 7210.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 311,
+        "day": 12,
+        "hour": 23,
+        "p0": {
+          "money": 7012.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 8,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 7208.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 335,
+        "day": 13,
+        "hour": 23,
+        "p0": {
+          "money": 7269.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 11,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 7,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 7419.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 359,
+        "day": 14,
+        "hour": 23,
+        "p0": {
+          "money": 7511.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 11,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 7,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 7497.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 383,
+        "day": 15,
+        "hour": 23,
+        "p0": {
+          "money": 7569.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 11,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 7,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 7503.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 407,
+        "day": 16,
+        "hour": 23,
+        "p0": {
+          "money": 8164.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 8,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 7934.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 9,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 431,
+        "day": 17,
+        "hour": 23,
+        "p0": {
+          "money": 9703.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 1,
+          "empty": 7,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 9461.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 455,
+        "day": 18,
+        "hour": 23,
+        "p0": {
+          "money": 11351.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 8,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 9441.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 479,
+        "day": 19,
+        "hour": 23,
+        "p0": {
+          "money": 11417.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 8,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 10242.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 9,
+            "MELON": 5
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 10,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 503,
+        "day": 20,
+        "hour": 23,
+        "p0": {
+          "money": 18060.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 13327.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10,
+            "MELON": 2
+          },
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 527,
+        "day": 21,
+        "hour": 23,
+        "p0": {
+          "money": 19009.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 16596.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 551,
+        "day": 22,
+        "hour": 23,
+        "p0": {
+          "money": 19938.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 16763.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 575,
+        "day": 23,
+        "hour": 23,
+        "p0": {
+          "money": 20017.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 11
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 16806.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 599,
+        "day": 24,
+        "hour": 23,
+        "p0": {
+          "money": 21834.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 11
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 12,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 17943.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 10
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 13,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 623,
+        "day": 25,
+        "hour": 23,
+        "p0": {
+          "money": 23047.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 6
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 17,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 18612.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 18,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 647,
+        "day": 26,
+        "hour": 23,
+        "p0": {
+          "money": 24179.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 18,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 19352.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 5
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 18,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 671,
+        "day": 27,
+        "hour": 23,
+        "p0": {
+          "money": 24249.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 2
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 21,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 19551.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {
+            "WHEAT": 3
+          },
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 20,
+          "locked": 75,
+          "empty_struct": 0
+        }
+      },
+      {
+        "step": 695,
+        "day": 28,
+        "hour": 23,
+        "p0": {
+          "money": 26374.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {},
+          "herd": {
+            "COW": 2
+          },
+          "weeds": 0,
+          "empty": 23,
+          "locked": 75,
+          "empty_struct": 0
+        },
+        "p1": {
+          "money": 20353.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {},
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 23,
+          "locked": 75,
+          "empty_struct": 1
+        }
+      },
+      {
+        "step": 719,
+        "day": 29,
+        "hour": 23,
+        "p0": {
+          "money": 26730.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {},
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 23,
+          "locked": 75,
+          "empty_struct": 1
+        },
+        "p1": {
+          "money": 20955.0,
+          "hands": 6,
+          "quads": [
+            "NW"
+          ],
+          "plants": {},
+          "herd": {
+            "COW": 1
+          },
+          "weeds": 0,
+          "empty": 23,
+          "locked": 75,
+          "empty_struct": 1
+        }
+      }
+    ],
+    "actions": [
+      {
+        "PASS": 1600,
+        "PICKUP": 442,
+        "NORTH": 420,
+        "WEST": 396,
+        "SOUTH": 331,
+        "WATER": 308,
+        "EAST": 239,
+        "DROP": 192,
+        "HARVEST": 77,
+        "PLANT": 71,
+        "COLLECT_FERTILIZER": 41,
+        "FEED": 33,
+        "CARE": 32,
+        "DIG": 10,
+        "BUILD_PASTURE": 2,
+        "PLACE": 2,
+        "FERTILIZE": 1
+      },
+      {
+        "PASS": 1728,
+        "NORTH": 403,
+        "PICKUP": 402,
+        "WEST": 375,
+        "SOUTH": 327,
+        "WATER": 300,
+        "EAST": 232,
+        "DROP": 212,
+        "PLANT": 66,
+        "HARVEST": 66,
+        "COLLECT_FERTILIZER": 27,
+        "FEED": 21,
+        "CARE": 21,
+        "DIG": 8,
+        "FERTILIZE": 5,
+        "BUILD_PASTURE": 2,
+        "PLACE": 2
+      }
+    ],
+    "market": [
+      {
+        "('HIRE',)": 169,
+        "('SELL', 'WHEAT')": 164,
+        "('BUY_SEED', 'WHEAT')": 64,
+        "('SELL', 'MELON')": 41,
+        "('SELL', 'MILK')": 39,
+        "('SELL', 'FERTILIZER')": 36,
+        "('BUY_SEED', 'MELON')": 10,
+        "('BUY_ANIMAL', 'COW')": 2,
+        "('BUY_ANIMAL', 'SHEEP')": 1,
+        "('BUY_PRODUCT', 'WHEAT')": 1
+      },
+      {
+        "('HIRE',)": 169,
+        "('SELL', 'WHEAT')": 159,
+        "('BUY_SEED', 'WHEAT')": 59,
+        "('SELL', 'MELON')": 44,
+        "('SELL', 'FERTILIZER')": 21,
+        "('SELL', 'MILK')": 19,
+        "('BUY_SEED', 'MELON')": 10,
+        "('BUY_ANIMAL', 'COW')": 2
+      }
+    ]
+  }
+]
