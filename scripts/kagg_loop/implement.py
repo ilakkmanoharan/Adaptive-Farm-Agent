@@ -182,9 +182,7 @@ def local_smoke(code_path: Path, seeds: int = 1) -> dict:
     import sys
 
     sys.path.insert(0, str(LOCAL_ENV))
-    from run_local import _env, _obs_dict, _state
-
-    import kaggriculture_env as envmod
+    from run_local import _env, _obs_dict, _state, envmod
 
     spec = importlib.util.spec_from_file_location("kagg_new_agent", str(code_path))
     mod = importlib.util.module_from_spec(spec)

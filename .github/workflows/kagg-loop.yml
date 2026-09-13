@@ -49,7 +49,7 @@ jobs:
 
       - name: Install loop deps
         run: |
-          pip install kaggle
+          pip install "kaggle==1.7.4.5" || pip install "kaggle>=1.6.17,<2"
           pip install cursor-sdk || echo "cursor-sdk optional; OpenAI fallback will implement"
 
       - name: Require Action secrets
@@ -73,8 +73,10 @@ jobs:
       - name: Kaggle credentials
         run: |
           mkdir -p "$HOME/.kaggle"
+          # Legacy username/key file (kaggle 1.6/1.7) plus the KGAT access_token (kaggle 2.x).
           printf '%s\n' "{\"username\":\"$KAGGLE_USERNAME\",\"key\":\"$KAGGLE_KEY\"}" > "$HOME/.kaggle/kaggle.json"
-          chmod 600 "$HOME/.kaggle/kaggle.json"
+          printf '%s\n' "$KAGGLE_KEY" > "$HOME/.kaggle/access_token"
+          chmod 600 "$HOME/.kaggle/kaggle.json" "$HOME/.kaggle/access_token"
         env:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
@@ -85,6 +87,7 @@ jobs:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_KEY }}
           KAGG_LOOP_PUSH: "1"
           KAGG_LOOP_CURSOR_RUNTIME: cloud
           KAGG_LOOP_REPO_URL: https://github.com/ilakkmanoharan/Adaptive-Farm-Agent
