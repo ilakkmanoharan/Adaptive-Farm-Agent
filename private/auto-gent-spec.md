@@ -19,7 +19,9 @@ Each slot waits on the previous upload (~3 hours of live games), then:
 5. Implement `YYYY-MM-DD-sX/main.py` with a **Cursor cloud agent** (`CURSOR_API_KEY`); if that is missing, fall back to ChatGPT writing the file
 6. Smoke vs starter on the vendored env when present
 7. `kaggle competitions submit kaggriculture`
-8. Record `private/loop_state.json` and push safe files back to GitHub
+8. Commit the new `YYYY-MM-DD-sX/main.py` plus `private/<Mon-DD-YYYY>-X/` spec (and `loop_state.json`) and **push to [github.com/ilakkmanoharan/Adaptive-Farm-Agent](https://github.com/ilakkmanoharan/Adaptive-Farm-Agent)**
+
+Replay dumps and `private/api-keys/` stay gitignored. Push runs only after a Kaggle submit (or when `KAGG_LOOP_PUSH=1`). Use `--skip-github` or `KAGG_LOOP_PUSH=0` to disable.
 
 Stops after **2026-09-30**. Kaggle allows 5 submits/day; this uses all of them.
 
@@ -38,7 +40,7 @@ python3 scripts/kagg_loop/orchestrate.py --slot 2 --skip-submit
 
 The workflow only runs after this repo is on GitHub with Actions enabled.
 
-1. Create a GitHub repo and push `main` (do **not** commit `private/api-keys/`).
+1. Repo is [ilakkmanoharan/Adaptive-Farm-Agent](https://github.com/ilakkmanoharan/Adaptive-Farm-Agent). Push `main` (do **not** commit `private/api-keys/`).
 2. In the repo: **Settings → Secrets and variables → Actions**, add:
    - `OPENAI_API_KEY` — same value as `private/api-keys/api-keys.md`
    - `KAGGLE_USERNAME` / `KAGGLE_KEY` — from `~/.kaggle/kaggle.json`

@@ -40,6 +40,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: true
 
       - name: Python 3.11
         uses: actions/setup-python@v5
@@ -68,7 +69,8 @@ jobs:
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
           KAGG_LOOP_PUSH: "1"
           KAGG_LOOP_CURSOR_RUNTIME: cloud
-          KAGG_LOOP_REPO_URL: https://github.com/${{ github.repository }}
+          KAGG_LOOP_REPO_URL: https://github.com/ilakkmanoharan/Adaptive-Farm-Agent
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TZ: America/Chicago
         run: |
           set -e

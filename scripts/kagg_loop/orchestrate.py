@@ -10,7 +10,6 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import subprocess
 import sys
 from datetime import date, datetime
 from pathlib import Path
@@ -28,6 +27,7 @@ from scripts.kagg_loop.config import (
     code_dir,
     spec_dir,
 )
+from scripts.kagg_loop.github_push import GitPushError, push_slot
 from scripts.kagg_loop.implement import implement, latest_code_dir, local_smoke
 from scripts.kagg_loop.kaggle_logs import latest_complete_id, list_our_submissions, pull_submission_logs
 from scripts.kagg_loop.slots import is_submit_hour, slot_for
@@ -53,35 +53,14 @@ def resolve_slot(args: argparse.Namespace) -> tuple[date, int]:
     return day, slot
 
 
-def git_sync(paths: list[Path], message: str) -> None:
-    if os.environ.get("KAGG_LOOP_PUSH") != "1":
-        return
-    if not (ROOT / ".git").exists():
-        return
-    to_add = [str(p.relative_to(ROOT)) for p in paths if p.exists()]
-    if not to_add:
-        return
-    subprocess.run(["git", "add", "--"] + to_add, cwd=ROOT, check=False)
-    staged = subprocess.run(
-        ["git", "diff", "--cached", "--quiet"], cwd=ROOT, check=False
-    )
-    if staged.returncode == 0:
-        return
-    subprocess.run(
-        [
-            "git",
-            "-c",
-            "user.name=ilakk manoharan",
-            "-c",
-            "user.email=28582192+ilakkmanoharan@users.noreply.github.com",
-            "commit",
-            "-m",
-            message,
-        ],
-        cwd=ROOT,
-        check=False,
-    )
-    subprocess.run(["git", "push"], cwd=ROOT, check=False)
+def should_push_github(submitted: bool, skip_github: bool) -> bool:
+    if skip_github:
+        return False
+    if os.environ.get("KAGG_LOOP_PUSH") == "0":
+        return False
+    if submitted:
+        return True
+    return os.environ.get("KAGG_LOOP_PUSH") == "1"
 
 
 def main() -> int:
@@ -93,6 +72,7 @@ def main() -> int:
     p.add_argument("--skip-submit", action="store_true")
     p.add_argument("--skip-implement", action="store_true")
     p.add_argument("--force", action="store_true", help="re-run a slot that already submitted")
+    p.add_argument("--skip-github", action="store_true", help="do not commit/push to GitHub")
     args = p.parse_args()
 
     if args.require_slot_hour and not is_submit_hour() and not (args.slot or args.date):
@@ -178,10 +158,11 @@ def main() -> int:
     else:
         print("skip submit")
 
+    kid = result.get("kaggle_id")
     rec = state.mark(
         day,
         slot,
-        kaggle_id=result.get("kaggle_id"),
+        kaggle_id=kid,
         prev_kaggle_id=prev_id,
         spec=str(sdir.relative_to(ROOT)),
         code=str(cdir.relative_to(ROOT)),
@@ -192,19 +173,30 @@ def main() -> int:
     )
     print("state", rec)
 
-    git_sync(
-        [
-            sdir / ("kaggriculture-s%s-spec.md" % slot),
-            sdir / ("chatgpt-s%s-spec.md" % slot),
-            sdir / "briefing.md",
-            sdir / "logs" / "replay_summary.json",
-            sdir / "logs" / "episodes.json",
-            sdir / "logs" / "submissions.json",
-            cdir / "main.py",
-            STATE_FILE,
-        ],
-        message,
-    )
+    submitted = bool(kid) or (not args.skip_submit and result.get("status") not in (None, "skipped", "unknown"))
+    # A completed Kaggle upload always ships code+spec to GitHub, even if the id lookup lagged.
+    if not args.skip_submit and result.get("skipped") is not True:
+        submitted = True
+    if should_push_github(submitted, args.skip_github):
+        commit_msg = "Submit %s to Kaggle%s: spec + main.py" % (
+            cdir.name,
+            " %s" % kid if kid else "",
+        )
+        try:
+            pushed = push_slot(
+                spec_dir=sdir,
+                code_dir=cdir,
+                extra=[STATE_FILE],
+                message=commit_msg,
+            )
+            print("github", pushed)
+            state.mark(day, slot, github_sha=pushed.get("sha"), github_url=pushed.get("url"))
+        except GitPushError as exc:
+            print("github push failed:", exc)
+            (sdir / "github-push.err.txt").write_text(str(exc), encoding="utf-8")
+            return 2
+    else:
+        print("skip github push")
     return 0
 
 
