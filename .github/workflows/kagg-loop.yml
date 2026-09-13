@@ -52,6 +52,24 @@ jobs:
           pip install kaggle
           pip install cursor-sdk || echo "cursor-sdk optional; OpenAI fallback will implement"
 
+      - name: Require Action secrets
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: |
+          missing=""
+          [ -n "$OPENAI_API_KEY" ] || missing="$missing OPENAI_API_KEY"
+          [ -n "$KAGGLE_USERNAME" ] || missing="$missing KAGGLE_USERNAME"
+          [ -n "$KAGGLE_KEY" ] || missing="$missing KAGGLE_KEY"
+          if [ -n "$missing" ]; then
+            echo "::error::Missing GitHub Actions secrets:$missing"
+            echo "Add them at https://github.com/ilakkmanoharan/Adaptive-Farm-Agent/settings/secrets/actions"
+            echo "Use the same Kaggle user/key as ~/.kaggle/kaggle.json and OPENAI_API_KEY from private/api-keys."
+            exit 1
+          fi
+          echo "Required secrets are present (values not printed)."
+
       - name: Kaggle credentials
         run: |
           mkdir -p "$HOME/.kaggle"
@@ -72,16 +90,20 @@ jobs:
           KAGG_LOOP_REPO_URL: https://github.com/ilakkmanoharan/Adaptive-Farm-Agent
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TZ: America/Chicago
+          SLOT_INPUT: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.slot || '' }}
+          DATE_INPUT: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.date || '' }}
+          SKIP_SUBMIT_INPUT: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.skip_submit || '' }}
+        shell: bash
         run: |
-          set -e
+          set -euo pipefail
           ARGS=()
-          if [ -n "${{ github.event.inputs.slot }}" ]; then
-            ARGS+=(--slot "${{ github.event.inputs.slot }}")
+          if [ -n "${SLOT_INPUT:-}" ]; then
+            ARGS+=(--slot "$SLOT_INPUT")
           fi
-          if [ -n "${{ github.event.inputs.date }}" ]; then
-            ARGS+=(--date "${{ github.event.inputs.date }}")
+          if [ -n "${DATE_INPUT:-}" ]; then
+            ARGS+=(--date "$DATE_INPUT")
           fi
-          if [ "${{ github.event.inputs.skip_submit }}" = "1" ]; then
+          if [ "${SKIP_SUBMIT_INPUT:-}" = "1" ]; then
             ARGS+=(--skip-submit)
           fi
           python3 scripts/kagg_loop/orchestrate.py "${ARGS[@]}"

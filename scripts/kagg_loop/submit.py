@@ -15,7 +15,13 @@ def submit(main_py: Path, message: str) -> dict[str, Any]:
     if not main_py.is_file():
         raise SystemExit("nothing to submit: %s" % main_py)
     api = KaggleApi()
-    api.authenticate()
+    try:
+        api.authenticate()
+    except Exception as exc:
+        raise SystemExit(
+            "Kaggle auth failed (%s). On GitHub Actions set secrets "
+            "KAGGLE_USERNAME and KAGGLE_KEY." % exc
+        ) from exc
     before = {getattr(s, "ref", None) for s in (api.competition_submissions(COMPETITION) or [])}
     api.competition_submit(str(main_py), message, COMPETITION)
     new_id = None

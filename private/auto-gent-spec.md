@@ -41,7 +41,7 @@ python3 scripts/kagg_loop/orchestrate.py --slot 2 --skip-submit
 The workflow only runs after this repo is on GitHub with Actions enabled.
 
 1. Repo is [ilakkmanoharan/Adaptive-Farm-Agent](https://github.com/ilakkmanoharan/Adaptive-Farm-Agent). Push `main` (do **not** commit `private/api-keys/`).
-2. In the repo: **Settings → Secrets and variables → Actions**, add:
+2. **Required** or the cron will start and die immediately: [Settings → Secrets and variables → Actions](https://github.com/ilakkmanoharan/Adaptive-Farm-Agent/settings/secrets/actions), add:
    - `OPENAI_API_KEY` — same value as `private/api-keys/api-keys.md`
    - `KAGGLE_USERNAME` / `KAGGLE_KEY` — from `~/.kaggle/kaggle.json`
    - `CURSOR_API_KEY` — [Cursor Dashboard → API Keys](https://cursor.com/dashboard/integrations)

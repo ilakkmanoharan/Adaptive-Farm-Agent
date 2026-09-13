@@ -153,7 +153,14 @@ def main() -> int:
 
     result = {"skipped": True}
     if not args.skip_submit:
-        result = submit(main_py, message)
+        try:
+            result = submit(main_py, message)
+        except SystemExit:
+            raise
+        except Exception as exc:
+            print("kaggle submit failed:", exc)
+            (sdir / "submit.err.txt").write_text(str(exc), encoding="utf-8")
+            raise SystemExit("kaggle submit failed: %s" % exc) from exc
         print("submitted", result)
     else:
         print("skip submit")
