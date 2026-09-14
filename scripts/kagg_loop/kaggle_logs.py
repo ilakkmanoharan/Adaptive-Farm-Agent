@@ -46,12 +46,28 @@ def latest_complete_id(rows: list[dict[str, Any]] | None = None) -> int | None:
     return None
 
 
+def _episode_request_types():
+    import kagglesdk.competitions.types.competition_api_service as svc
+
+    def pick(*names):
+        for name in names:
+            cls = getattr(svc, name, None)
+            if cls is not None:
+                return cls
+        available = [n for n in dir(svc) if "Episode" in n or "Replay" in n]
+        raise ImportError("kagglesdk missing episode types; have %s" % available)
+
+    return (
+        pick("ApiListSubmissionEpisodesRequest"),
+        pick("ApiGetEpisodeAgentLogsRequest", "ApiGetEpisodeLogsRequest"),
+        pick("ApiGetEpisodeReplayRequest", "ApiGetReplayRequest"),
+    )
+
+
 def pull_submission_logs(submission_id: int, out_dir: Path, label: str = "prev") -> dict[str, Any]:
     """Download episodes + our agent logs + full replays. Opponent logs often 403."""
-    from kagglesdk.competitions.types.competition_api_service import (
-        ApiGetEpisodeAgentLogsRequest,
-        ApiGetEpisodeReplayRequest,
-        ApiListSubmissionEpisodesRequest,
+    ApiListSubmissionEpisodesRequest, ApiGetEpisodeAgentLogsRequest, ApiGetEpisodeReplayRequest = (
+        _episode_request_types()
     )
 
     out_dir.mkdir(parents=True, exist_ok=True)
