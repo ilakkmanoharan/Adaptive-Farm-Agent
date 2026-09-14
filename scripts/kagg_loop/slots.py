@@ -18,11 +18,7 @@ def now_local(now: datetime | None = None) -> datetime:
 
 
 def slot_for(now: datetime | None = None) -> tuple[date, int]:
-    """Return (local_date, slot 1–5) for the current or given time.
-
-    Before 4am the slot is yesterday's 5 (logs-only window). Callers that
-    submit should pass --slot or wait until 4am.
-    """
+    """Return (local_date, clock-mapped slot). Prefer next_unused_slot in the loop."""
     local = now_local(now)
     hour = local.hour
     chosen = None
@@ -30,9 +26,12 @@ def slot_for(now: datetime | None = None) -> tuple[date, int]:
         if hour >= start:
             chosen = i
     if chosen is None:
-        # 0:00–3:59 → previous calendar day's last slot
         return local.date() - timedelta(days=1), 5
     return local.date(), chosen
+
+
+def chicago_date(now: datetime | None = None) -> date:
+    return now_local(now).date()
 
 
 def is_submit_hour(now: datetime | None = None) -> bool:

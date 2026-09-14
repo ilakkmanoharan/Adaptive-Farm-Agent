@@ -1,15 +1,10 @@
-# Five Kaggriculture submits/day while this machine is off.
-# Local times are America/Chicago: 4am, 7am, 10am, 1pm, 3pm.
-# Cron is UTC for CDT (UTC-5), which covers the Sep 2026 deadline.
+# Five Kaggriculture submits/day, one per hour, while this machine is off.
+# Fires every hour UTC; the script no-ops after 5 Chicago-day uploads.
 name: kagg-loop
 
 on:
   schedule:
-    - cron: "0 9 * * *"   # 4:00am
-    - cron: "0 12 * * *"  # 7:00am
-    - cron: "0 15 * * *"  # 10:00am
-    - cron: "0 18 * * *"  # 1:00pm
-    - cron: "0 20 * * *"  # 3:00pm
+    - cron: "0 * * * *"
   workflow_dispatch:
     inputs:
       slot:

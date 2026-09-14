@@ -1,16 +1,10 @@
 # Unattended Kaggriculture loop
 
-Runs **5 times per day** in the cloud so the Mac can stay off.
+Runs **up to 5 times per Chicago day**, **one hour apart**, so the Mac can stay off.
 
-| Local time (`America/Chicago`) | Slot folder | Code folder |
-|---|---|---|
-| 4:00am | `private/Sep-13-2026-1` | `2026-09-13-s1/` |
-| 7:00am | `private/Sep-13-2026-2` | `2026-09-13-s2/` |
-| 10:00am | `private/Sep-13-2026-3` | `2026-09-13-s3/` |
-| 1:00pm | `private/Sep-13-2026-4` | `2026-09-13-s4/` |
-| 3:00pm | `private/Sep-13-2026-5` | `2026-09-13-s5/` |
+GitHub Actions fires every hour. The script takes the next unused slot (1–5) and exits once five uploads exist for that date. Tonight after s5, the remaining slots are **s1 → s2 → s3 → s4** on the next four hour marks (about 8pm, 9pm, 10pm, 11pm Chicago).
 
-Each slot waits on the previous upload (~3 hours of live games), then:
+Each slot:
 
 1. Pull Kaggle episodes / our agent logs / replays for the last complete submission
 2. Compress replays into `replay_summary.json` + `briefing.md`

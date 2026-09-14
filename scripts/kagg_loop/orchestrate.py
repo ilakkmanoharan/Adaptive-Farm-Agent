@@ -30,7 +30,7 @@ from scripts.kagg_loop.config import (
 from scripts.kagg_loop.github_push import GitPushError, push_slot
 from scripts.kagg_loop.implement import implement, latest_code_dir, local_smoke
 from scripts.kagg_loop.kaggle_logs import latest_complete_id, list_our_submissions, pull_submission_logs
-from scripts.kagg_loop.slots import is_submit_hour, slot_for
+from scripts.kagg_loop.slots import chicago_date, is_submit_hour
 from scripts.kagg_loop import state
 from scripts.kagg_loop.summarize import briefing_text, summarize_logs
 from scripts.kagg_loop.submit import submit
@@ -42,15 +42,15 @@ def _parse_date(raw: str | None) -> date | None:
     return date.fromisoformat(raw)
 
 
-def resolve_slot(args: argparse.Namespace) -> tuple[date, int]:
-    if args.date and args.slot:
-        return _parse_date(args.date), int(args.slot)
-    day, slot = slot_for()
-    if args.date:
-        day = _parse_date(args.date)
+def resolve_slot(args: argparse.Namespace) -> tuple[date, int] | None:
+    day = _parse_date(args.date) if args.date else chicago_date()
     if args.slot:
-        slot = int(args.slot)
-    return day, slot
+        return day, int(args.slot)
+    # Hourly cron: take the next unused 1–5 for this Chicago day.
+    unused = state.next_unused_slot(day)
+    if unused is None:
+        return None
+    return day, unused
 
 
 def should_push_github(submitted: bool, skip_github: bool) -> bool:
@@ -79,7 +79,11 @@ def main() -> int:
         print("not a submit hour in America/Chicago; exiting")
         return 0
 
-    day, slot = resolve_slot(args)
+    resolved = resolve_slot(args)
+    if resolved is None:
+        print("all 5 slots already submitted for this Chicago day; exiting")
+        return 0
+    day, slot = resolved
     if day > LAST_SUBMIT_DATE:
         print("past final deadline %s; no submit" % LAST_SUBMIT_DATE)
         return 0

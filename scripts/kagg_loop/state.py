@@ -31,6 +31,17 @@ def slot_record(data: dict[str, Any], day: date, slot: int) -> dict[str, Any] | 
     return (data.get(day_key(day)) or {}).get(str(slot))
 
 
+def next_unused_slot(day: date, data: dict[str, Any] | None = None) -> int | None:
+    """First of 1–5 for this Chicago day that has no kaggle_id yet."""
+    data = load() if data is None else data
+    day_map = data.get(day_key(day)) or {}
+    for slot in (1, 2, 3, 4, 5):
+        rec = day_map.get(str(slot)) or {}
+        if not rec.get("kaggle_id"):
+            return slot
+    return None
+
+
 def mark(day: date, slot: int, **fields: Any) -> dict[str, Any]:
     data = load()
     day_map = data.setdefault(day_key(day), {})
