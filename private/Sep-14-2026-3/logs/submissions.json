@@ -1,0 +1,44 @@
+[
+  {
+    "ref": 56230978,
+    "date": "2026-09-14 12:35:23.877000",
+    "description": "2026-09-14-2 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56223053,
+    "date": "2026-09-14 05:59:32.563000",
+    "description": "2026-09-14-1 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56216661,
+    "date": "2026-09-13 23:55:59.567000",
+    "description": "2026-09-13-5 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56198047,
+    "date": "2026-09-13 03:27:14.330000",
+    "description": "s3 no-drop pasture-reserve sheep-first market-feed",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56197392,
+    "date": "2026-09-13 02:43:55.743000",
+    "description": "s2 scale herd land strawberry market-feed",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56197136,
+    "date": "2026-09-13 02:26:24.127000",
+    "description": "v1 deterministic wheat-melon-herd baseline",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  }
+]
