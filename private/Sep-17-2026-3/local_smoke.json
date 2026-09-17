@@ -1,0 +1,85 @@
+{
+  "runs": [
+    {
+      "seed": 1000,
+      "us": 57803.0,
+      "opp": 3794.0,
+      "wheat_buy": 764,
+      "cow_buys": 6,
+      "sheep_buys": 2,
+      "land_buys": 1,
+      "max_cows": 4,
+      "max_sheep": 2,
+      "quads": 2,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 1001,
+      "us": 56132.0,
+      "opp": 3729.0,
+      "wheat_buy": 721,
+      "cow_buys": 5,
+      "sheep_buys": 2,
+      "land_buys": 1,
+      "max_cows": 4,
+      "max_sheep": 2,
+      "quads": 2,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 1002,
+      "us": 55018.0,
+      "opp": 3431.0,
+      "wheat_buy": 811,
+      "cow_buys": 6,
+      "sheep_buys": 2,
+      "land_buys": 1,
+      "max_cows": 5,
+      "max_sheep": 2,
+      "quads": 2,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 42,
+      "us": 55124.0,
+      "opp": 3464.0,
+      "wheat_buy": 811,
+      "cow_buys": 6,
+      "sheep_buys": 2,
+      "land_buys": 1,
+      "max_cows": 5,
+      "max_sheep": 2,
+      "quads": 2,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 7,
+      "us": 59547.0,
+      "opp": 3558.0,
+      "wheat_buy": 811,
+      "cow_buys": 6,
+      "sheep_buys": 2,
+      "land_buys": 1,
+      "max_cows": 5,
+      "max_sheep": 2,
+      "quads": 2,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ],
+  "mean_us": 56724.8
+}

@@ -1,0 +1,614 @@
+[
+  {
+    "submission_id": 56298529,
+    "id": 110196905,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56313979,
+        "team_name": "CortexExplorer",
+        "reward": 26365
+      },
+      {
+        "index": 1,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 45495
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 110143128,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 39552
+      },
+      {
+        "index": 1,
+        "submission_id": 55953817,
+        "team_name": "Kotaro Furuno",
+        "reward": 29049
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 110074576,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 30130
+      },
+      {
+        "index": 1,
+        "submission_id": 56305207,
+        "team_name": "XYZ-Siddhartha",
+        "reward": 32179
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 110015745,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 48239
+      },
+      {
+        "index": 1,
+        "submission_id": 56300993,
+        "team_name": "AchyutKishore123",
+        "reward": 75857
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 110001163,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 41927
+      },
+      {
+        "index": 1,
+        "submission_id": 55488603,
+        "team_name": "JCN2365",
+        "reward": 94809
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109989062,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 26538
+      },
+      {
+        "index": 1,
+        "submission_id": 55261510,
+        "team_name": "Solve Langseth",
+        "reward": 63244
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109987972,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56294130,
+        "team_name": "ronger zhu",
+        "reward": 88110
+      },
+      {
+        "index": 1,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 31128
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109986900,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55386870,
+        "team_name": "Jay Parsana",
+        "reward": 26728
+      },
+      {
+        "index": 1,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 36751
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109985844,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 34815
+      },
+      {
+        "index": 1,
+        "submission_id": 55885298,
+        "team_name": "Arif Amijoyo",
+        "reward": 30524
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109984736,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 26147
+      },
+      {
+        "index": 1,
+        "submission_id": 56192203,
+        "team_name": "Abed Kibbe",
+        "reward": 80314
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109983625,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55739555,
+        "team_name": "Florian Tigoulet",
+        "reward": 48510
+      },
+      {
+        "index": 1,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 33729
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109982471,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 45438
+      },
+      {
+        "index": 1,
+        "submission_id": 56221831,
+        "team_name": "ANKIT AGARWAL",
+        "reward": 45713
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109981400,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 48979
+      },
+      {
+        "index": 1,
+        "submission_id": 55616041,
+        "team_name": "Mint120",
+        "reward": 71588
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109980298,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55336537,
+        "team_name": "Sarthak Vedant Mohanty",
+        "reward": 98405
+      },
+      {
+        "index": 1,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 33868
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109979206,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 33656
+      },
+      {
+        "index": 1,
+        "submission_id": 55265540,
+        "team_name": "Shuaib ayad Jasim Jasim",
+        "reward": 30452
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109978127,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 29286
+      },
+      {
+        "index": 1,
+        "submission_id": 56287724,
+        "team_name": "Ganesh ",
+        "reward": 26603
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109977081,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55323807,
+        "team_name": "Saugat Kannojia",
+        "reward": 33640
+      },
+      {
+        "index": 1,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 43155
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109975933,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 46315
+      },
+      {
+        "index": 1,
+        "submission_id": 55259905,
+        "team_name": "Arnav Yashlaha",
+        "reward": 42490
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109974881,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 43311
+      },
+      {
+        "index": 1,
+        "submission_id": 55471613,
+        "team_name": "@mldsdev",
+        "reward": 68841
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109973762,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55696611,
+        "team_name": "anish711",
+        "reward": 70794
+      },
+      {
+        "index": 1,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 37546
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109972664,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55458958,
+        "team_name": "Yunus Emre Sar\u0131duman",
+        "reward": 20554
+      },
+      {
+        "index": 1,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 36230
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109971520,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 41153
+      },
+      {
+        "index": 1,
+        "submission_id": 56298475,
+        "team_name": "Umar Tabbsum",
+        "reward": 2000
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109970539,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 34094
+      },
+      {
+        "index": 1,
+        "submission_id": 55483976,
+        "team_name": "Phillip Kamundia",
+        "reward": 32243
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109969382,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 44800
+      },
+      {
+        "index": 1,
+        "submission_id": 55266103,
+        "team_name": "phoenix_merk",
+        "reward": 64456
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109968316,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 29478
+      },
+      {
+        "index": 1,
+        "submission_id": 55814507,
+        "team_name": "T\u00e2m La Th\u00e0nh",
+        "reward": 51859
+      }
+    ]
+  },
+  {
+    "submission_id": 56298529,
+    "id": 109967075,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 43413
+      },
+      {
+        "index": 1,
+        "submission_id": 56298529,
+        "team_name": "Ilakk manoharan",
+        "reward": 44071
+      }
+    ]
+  },
+  {
+    "submission_id": 56315005,
+    "id": 110225037,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55297654,
+        "team_name": "Akand\u00e9 Philippe ABIODOUN",
+        "reward": 16189
+      },
+      {
+        "index": 1,
+        "submission_id": 56315005,
+        "team_name": "Ilakk manoharan",
+        "reward": 3000
+      }
+    ]
+  },
+  {
+    "submission_id": 56315005,
+    "id": 110223899,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 55600930,
+        "team_name": "Kateryna Dudko",
+        "reward": 10951
+      },
+      {
+        "index": 1,
+        "submission_id": 56315005,
+        "team_name": "Ilakk manoharan",
+        "reward": 3000
+      }
+    ]
+  },
+  {
+    "submission_id": 56315005,
+    "id": 110222779,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56277084,
+        "team_name": "BarbateP",
+        "reward": 26436
+      },
+      {
+        "index": 1,
+        "submission_id": 56315005,
+        "team_name": "Ilakk manoharan",
+        "reward": 3000
+      }
+    ]
+  },
+  {
+    "submission_id": 56315005,
+    "id": 110221659,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56315005,
+        "team_name": "Ilakk manoharan",
+        "reward": 3000
+      },
+      {
+        "index": 1,
+        "submission_id": 55277423,
+        "team_name": "AsadUsmanFAST",
+        "reward": 36042
+      }
+    ]
+  },
+  {
+    "submission_id": 56315005,
+    "id": 110220583,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56315005,
+        "team_name": "Ilakk manoharan",
+        "reward": 3000
+      },
+      {
+        "index": 1,
+        "submission_id": 56306820,
+        "team_name": "Bennett Hellman",
+        "reward": 99047
+      }
+    ]
+  },
+  {
+    "submission_id": 56315005,
+    "id": 110219481,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56315005,
+        "team_name": "Ilakk manoharan",
+        "reward": 3000
+      },
+      {
+        "index": 1,
+        "submission_id": 55295794,
+        "team_name": "Axit",
+        "reward": 71388
+      }
+    ]
+  },
+  {
+    "submission_id": 56315005,
+    "id": 110218428,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56063767,
+        "team_name": "yunchuan liu",
+        "reward": 135665
+      },
+      {
+        "index": 1,
+        "submission_id": 56315005,
+        "team_name": "Ilakk manoharan",
+        "reward": 3000
+      }
+    ]
+  },
+  {
+    "submission_id": 56315005,
+    "id": 110218299,
+    "agents": [
+      {
+        "index": 0,
+        "submission_id": 56315005,
+        "team_name": "Ilakk manoharan",
+        "reward": 3000
+      },
+      {
+        "index": 1,
+        "submission_id": 56315005,
+        "team_name": "Ilakk manoharan",
+        "reward": 3000
+      }
+    ]
+  }
+]
