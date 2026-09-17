@@ -45,22 +45,25 @@ jobs:
       - name: Install loop deps
         run: |
           pip install "kaggle==1.7.4.5" || pip install "kaggle>=1.6.17,<2"
-          pip install cursor-sdk || echo "cursor-sdk optional; OpenAI fallback will implement"
+          pip install cursor-sdk || echo "cursor-sdk optional; Grok will implement"
 
       - name: Require Action secrets
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: |
           missing=""
-          [ -n "$OPENAI_API_KEY" ] || missing="$missing OPENAI_API_KEY"
           [ -n "$KAGGLE_USERNAME" ] || missing="$missing KAGGLE_USERNAME"
           [ -n "$KAGGLE_KEY" ] || missing="$missing KAGGLE_KEY"
+          if [ -z "$XAI_API_KEY" ] && [ -z "$CURSOR_API_KEY" ]; then
+            missing="$missing XAI_API_KEY_or_CURSOR_API_KEY"
+          fi
           if [ -n "$missing" ]; then
             echo "::error::Missing GitHub Actions secrets:$missing"
             echo "Add them at https://github.com/ilakkmanoharan/Adaptive-Farm-Agent/settings/secrets/actions"
-            echo "Use the same Kaggle user/key as ~/.kaggle/kaggle.json and OPENAI_API_KEY from private/api-keys."
+            echo "Prefer XAI_API_KEY (Grok) and/or CURSOR_API_KEY. OpenAI is optional and not required."
             exit 1
           fi
           echo "Required secrets are present (values not printed)."
@@ -78,13 +81,14 @@ jobs:
 
       - name: Run one slot
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_KEY }}
           KAGG_LOOP_PUSH: "1"
-          KAGG_LOOP_CURSOR_RUNTIME: cloud
+          KAGG_LOOP_CURSOR_RUNTIME: auto
           KAGG_LOOP_REPO_URL: https://github.com/ilakkmanoharan/Adaptive-Farm-Agent
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TZ: America/Chicago

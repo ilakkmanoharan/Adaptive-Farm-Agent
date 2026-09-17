@@ -8,9 +8,9 @@ Each slot:
 
 1. Pull Kaggle episodes / our agent logs / replays for the last complete submission
 2. Compress replays into `replay_summary.json` + `briefing.md`
-3. Send the briefing to ChatGPT (`gpt-4o`) via `OPENAI_API_KEY`
-4. Write `chatgpt-sX-spec.md` and `kaggriculture-sX-spec.md` under `private/<Mon-DD-YYYY>-X/`
-5. Implement `YYYY-MM-DD-sX/main.py` with a **Cursor cloud agent** (`CURSOR_API_KEY`); if that is missing, fall back to ChatGPT writing the file
+3. Write the next spec with **Grok** (`XAI_API_KEY`) first; Cursor optional; OpenAI only if credits exist (never required)
+4. Write `strategist-sX-spec.md` / `kaggriculture-sX-spec.md` under `private/<Mon-DD-YYYY>-X/`
+5. Implement `YYYY-MM-DD-sX/main.py` with **Cursor** when available, else **Grok**; copy previous bot only as last resort
 6. Smoke vs starter on the vendored env when present
 7. `kaggle competitions submit kaggriculture`
 8. Commit the new `YYYY-MM-DD-sX/main.py` plus `private/<Mon-DD-YYYY>-X/` spec (and `loop_state.json`) and **push to [github.com/ilakkmanoharan/Adaptive-Farm-Agent](https://github.com/ilakkmanoharan/Adaptive-Farm-Agent)**
@@ -36,9 +36,10 @@ The workflow only runs after this repo is on GitHub with Actions enabled.
 
 1. Repo is [ilakkmanoharan/Adaptive-Farm-Agent](https://github.com/ilakkmanoharan/Adaptive-Farm-Agent). Push `main` (do **not** commit `private/api-keys/`).
 2. **Required** or the cron will start and die immediately: [Settings → Secrets and variables → Actions](https://github.com/ilakkmanoharan/Adaptive-Farm-Agent/settings/secrets/actions), add:
-   - `OPENAI_API_KEY` — same value as `private/api-keys/api-keys.md`
    - `KAGGLE_USERNAME` / `KAGGLE_KEY` — from `~/.kaggle/kaggle.json`
-   - `CURSOR_API_KEY` — [Cursor Dashboard → API Keys](https://cursor.com/dashboard/integrations)
+   - `XAI_API_KEY` — Grok / xAI key from `private/api-keys/api-keys.md` (preferred strategist + implementer)
+   - `CURSOR_API_KEY` — [Cursor Dashboard → API Keys](https://cursor.com/dashboard/integrations) (optional but preferred for implement)
+   - `OPENAI_API_KEY` — optional only; loop must not depend on OpenAI credits
 3. Connect this GitHub repo to Cursor (Cloud Agents → GitHub) so step 5 can edit the tree.
 4. **Actions → kagg-loop → Run workflow** once to verify. After that the cron fires at the five times above.
 5. Optional VPS fallback (if you do not want GitHub):

@@ -1,10 +1,12 @@
-"""Implement the next bot: Cursor cloud/local first, OpenAI full-file fallback."""
+"""Implement the next bot: Cursor first, then Grok. OpenAI optional; never required."""
 
 from __future__ import annotations
 
 import json
 import os
 import shutil
+import subprocess
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -32,8 +34,9 @@ def implement(
     if prev_dir and (prev_dir / "main.py").is_file() and not dest.is_file():
         shutil.copy2(prev_dir / "main.py", dest)
 
+    before = dest.read_text(encoding="utf-8") if dest.is_file() else ""
     spec = spec_path.read_text(encoding="utf-8") if spec_path.is_file() else ""
-    prev_src = (prev_dir / "main.py").read_text(encoding="utf-8") if prev_dir else ""
+    prev_src = (prev_dir / "main.py").read_text(encoding="utf-8") if prev_dir else before
     prompt = _cursor_prompt(
         code_folder=code_dir.name,
         spec=spec,
@@ -43,29 +46,67 @@ def implement(
     )
 
     runtime = (os.environ.get("KAGG_LOOP_CURSOR_RUNTIME") or "auto").lower()
-    key = secret("CURSOR_API_KEY")
     used = None
-    if key and runtime in ("auto", "cloud", "local"):
+    if secret("CURSOR_API_KEY") and runtime in ("auto", "cloud", "local"):
         try:
-            used = _cursor_implement(prompt, runtime=runtime)
+            used = _cursor_implement(prompt, runtime=runtime, dest=dest, code_folder=code_dir.name)
+            print("cursor implement:", used)
         except Exception as exc:
             (code_dir / "cursor-implement.err.txt").write_text(str(exc), encoding="utf-8")
+            print("cursor implement failed:", exc)
             used = None
 
-    if dest.is_file() and dest.stat().st_size > 500 and used == "cursor":
+    if dest.is_file() and dest.stat().st_size > 500:
+        after = dest.read_text(encoding="utf-8")
+        if used and after != before:
+            return dest
+        # Cursor cloud may have opened a PR; try to pull main.py from it.
+        if used == "cursor" and _try_pull_from_pr(dest, code_dir.name):
+            return dest
+        if after and len(after) > 500 and used == "cursor-local":
+            return dest
+
+    # Grok writes the full file on this runner (reliable for Kaggle upload).
+    try:
+        grok_src = _llm_implement(
+            provider="grok",
+            spec=spec,
+            prev_src=prev_src,
+            code_folder=code_dir.name,
+        )
+        if grok_src:
+            dest.write_text(grok_src, encoding="utf-8")
+            print("implement source: grok")
+            return dest
+    except Exception as exc:
+        (code_dir / "grok-implement.err.txt").write_text(str(exc), encoding="utf-8")
+        print("grok implement failed:", exc)
+
+    # Optional OpenAI — ignore quota errors.
+    try:
+        openai_src = _llm_implement(
+            provider="openai",
+            spec=spec,
+            prev_src=prev_src,
+            code_folder=code_dir.name,
+        )
+        if openai_src:
+            dest.write_text(openai_src, encoding="utf-8")
+            print("implement source: openai")
+            return dest
+    except Exception as exc:
+        print("openai implement skipped:", exc)
+
+    if prev_dir and (prev_dir / "main.py").is_file():
+        shutil.copy2(prev_dir / "main.py", dest)
+        print("implement source: copy-previous")
         return dest
 
-    # If Cursor ran locally it should have written dest. Cloud writes on a VM —
-    # we still need a file here for Kaggle submit, so fall back to OpenAI.
-    if dest.is_file() and dest.stat().st_size > 500 and not key:
+    if dest.is_file() and dest.stat().st_size > 500:
+        print("implement source: existing")
         return dest
 
-    openai_src = _openai_implement(spec=spec, prev_src=prev_src, code_folder=code_dir.name)
-    if openai_src:
-        dest.write_text(openai_src, encoding="utf-8")
-    if not dest.is_file():
-        raise SystemExit("implement produced no %s" % dest)
-    return dest
+    raise SystemExit("implement produced no %s (need CURSOR_API_KEY or XAI_API_KEY)" % dest)
 
 
 def _cursor_prompt(*, code_folder: str, spec: str, prev_folder: str | None, prev_src: str, message: str) -> str:
@@ -93,42 +134,107 @@ Commit message hint: {message}
 """
 
 
-def _cursor_implement(prompt: str, runtime: str) -> str:
+def _cursor_implement(prompt: str, runtime: str, dest: Path, code_folder: str) -> str:
     from cursor_sdk import Agent, AgentOptions, CloudAgentOptions, CloudRepository, LocalAgentOptions
 
     key = secret("CURSOR_API_KEY")
     repo = github_repo_url()
-    use_cloud = runtime == "cloud" or (runtime == "auto" and repo)
-    if use_cloud and not repo:
-        use_cloud = False
-
-    if use_cloud:
-        options = AgentOptions(
-            api_key=key,
-            model="composer-2.5",
-            cloud=CloudAgentOptions(
-                repos=[CloudRepository(url=repo, starting_ref=os.environ.get("KAGG_LOOP_REF", "main"))],
-                auto_create_pr=True,
-                skip_reviewer_request=True,
-            ),
-        )
-    else:
+    # Prefer local on the Actions runner so main.py lands in this workspace.
+    prefer_local = runtime == "local" or (
+        runtime == "auto" and os.environ.get("GITHUB_ACTIONS") == "true"
+    )
+    if prefer_local or runtime == "local":
         options = AgentOptions(
             api_key=key,
             model="composer-2.5",
             local=LocalAgentOptions(cwd=str(ROOT)),
         )
+        result = Agent.prompt(prompt, options)
+        if getattr(result, "status", None) == "error":
+            raise RuntimeError("Cursor local failed: %s" % getattr(result, "id", None))
+        if dest.is_file() and dest.stat().st_size > 500:
+            return "cursor-local"
+        # fall through to cloud if local left no file
+        if runtime == "local":
+            return "cursor-local"
+
+    if not repo:
+        raise RuntimeError("no repo URL for Cursor cloud")
+    options = AgentOptions(
+        api_key=key,
+        model="composer-2.5",
+        cloud=CloudAgentOptions(
+            repos=[CloudRepository(url=repo, starting_ref=os.environ.get("KAGG_LOOP_REF", "main"))],
+            auto_create_pr=True,
+            skip_reviewer_request=True,
+        ),
+    )
     result = Agent.prompt(prompt, options)
-    status = getattr(result, "status", None)
-    if status == "error":
-        raise RuntimeError("Cursor run failed: %s" % getattr(result, "id", status))
+    if getattr(result, "status", None) == "error":
+        raise RuntimeError("Cursor cloud failed: %s" % getattr(result, "id", None))
+    (dest.parent / "cursor-run.json").write_text(
+        json.dumps(
+            {
+                "id": getattr(result, "id", None),
+                "status": getattr(result, "status", None),
+                "agent_id": getattr(result, "agent_id", None),
+            },
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
     return "cursor"
 
 
-def _openai_implement(*, spec: str, prev_src: str, code_folder: str) -> str | None:
-    key = secret("OPENAI_API_KEY")
+def _try_pull_from_pr(dest: Path, code_folder: str) -> bool:
+    """Best-effort: fetch latest open PR and copy code_folder/main.py."""
+    try:
+        subprocess.run(["git", "fetch", "origin"], cwd=ROOT, check=False, capture_output=True)
+        proc = subprocess.run(
+            ["git", "ls-remote", "--heads", "origin"],
+            cwd=ROOT,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        # Look for cursor / agent branches mentioning the folder name.
+        candidates = []
+        for line in (proc.stdout or "").splitlines():
+            if "refs/heads/" not in line:
+                continue
+            ref = line.split("refs/heads/", 1)[1].strip()
+            low = ref.lower()
+            if any(tok in low for tok in ("cursor", "agent", "composer", code_folder.lower())):
+                candidates.append(ref)
+        for ref in candidates[:5]:
+            show = subprocess.run(
+                ["git", "show", "origin/%s:%s/main.py" % (ref, code_folder)],
+                cwd=ROOT,
+                check=False,
+                capture_output=True,
+                text=True,
+            )
+            if show.returncode == 0 and show.stdout and len(show.stdout) > 500:
+                dest.write_text(show.stdout, encoding="utf-8")
+                print("pulled main.py from origin/%s" % ref)
+                return True
+    except Exception as exc:
+        print("pr pull skipped:", exc)
+    return False
+
+
+def _llm_implement(*, provider: str, spec: str, prev_src: str, code_folder: str) -> str | None:
+    if provider == "grok":
+        key = secret("XAI_API_KEY")
+        url = "https://api.x.ai/v1/chat/completions"
+        model = (os.environ.get("KAGG_LOOP_GROK_MODEL") or "grok-3").strip()
+    else:
+        key = secret("OPENAI_API_KEY")
+        url = "https://api.openai.com/v1/chat/completions"
+        model = (os.environ.get("KAGG_LOOP_OPENAI_MODEL") or "gpt-4o").strip()
     if not key:
         return None
+
     user = (
         "Rewrite the Kaggriculture agent as a complete Python stdlib main.py.\n"
         "Output ONLY the file contents. No markdown fences.\n"
@@ -136,7 +242,7 @@ def _openai_implement(*, spec: str, prev_src: str, code_folder: str) -> str | No
         % (code_folder, spec[:14000], prev_src[-18000:] if prev_src else "")
     )
     body = {
-        "model": "gpt-4o",
+        "model": model,
         "temperature": 0.15,
         "messages": [
             {
@@ -151,7 +257,7 @@ def _openai_implement(*, spec: str, prev_src: str, code_folder: str) -> str | No
         ],
     }
     req = urllib.request.Request(
-        "https://api.openai.com/v1/chat/completions",
+        url,
         data=json.dumps(body).encode("utf-8"),
         headers={
             "Authorization": "Bearer " + key,
@@ -159,8 +265,12 @@ def _openai_implement(*, spec: str, prev_src: str, code_folder: str) -> str | No
         },
         method="POST",
     )
-    with urllib.request.urlopen(req, timeout=180) as resp:
-        payload = json.loads(resp.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(req, timeout=240) as resp:
+            payload = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        err = exc.read().decode("utf-8", errors="replace")[:400]
+        raise RuntimeError("%s HTTP %s: %s" % (provider, exc.code, err)) from exc
     text = payload["choices"][0]["message"]["content"]
     return _strip_fences(text)
 

@@ -1,4 +1,4 @@
-"""Ask ChatGPT for the next-submission spec from the log briefing."""
+"""Ask Grok (preferred) or Cursor for the next-submission spec. OpenAI is optional last resort."""
 
 from __future__ import annotations
 
@@ -21,6 +21,14 @@ SYSTEM = (
     "stdlib main.py. Do not invent env APIs."
 )
 
+HEURISTIC = (
+    "# Heuristic next-spec (no LLM)\n\n"
+    "Keep the previous bot's crash wrapper. Never DROP; use PLACE item n for harvest.\n"
+    "Reserve pastures; sheep-first then cows; BUY_PRODUCT WHEAT so shed+carried >= herd+4.\n"
+    "Delay land until day>=10 and bank>=5000. Plant cap workers*3. Water before planting more.\n"
+    "Fix any thrash (PICKUP/DROP loops) and feed escapes from the latest briefing if present.\n"
+)
+
 
 def write_specs(
     spec_dir: Path,
@@ -33,7 +41,7 @@ def write_specs(
     prev_kaggle_id: int | None,
 ) -> Path:
     spec_dir.mkdir(parents=True, exist_ok=True)
-    chatgpt_md = ask_chatgpt(
+    body, source = ask_strategist(
         day=day,
         slot=slot,
         code_folder=code_folder,
@@ -41,20 +49,85 @@ def write_specs(
         prev_code_dir=prev_code_dir,
         prev_kaggle_id=prev_kaggle_id,
     )
-    (spec_dir / ("chatgpt-s%s-spec.md" % slot)).write_text(chatgpt_md, encoding="utf-8")
+    (spec_dir / ("strategist-s%s-spec.md" % slot)).write_text(body, encoding="utf-8")
+    # Keep legacy filename so older tooling still finds a draft.
+    (spec_dir / ("chatgpt-s%s-spec.md" % slot)).write_text(body, encoding="utf-8")
     merged = _merge_spec(
         day=day,
         slot=slot,
         code_folder=code_folder,
-        chatgpt_md=chatgpt_md,
+        body=body,
+        source=source,
         prev_kaggle_id=prev_kaggle_id,
     )
     out = spec_dir / ("kaggriculture-s%s-spec.md" % slot)
     out.write_text(merged, encoding="utf-8")
+    print("strategist source:", source)
     return out
 
 
-def ask_chatgpt(
+def ask_strategist(
+    *,
+    day: date,
+    slot: int,
+    code_folder: str,
+    briefing_text: str,
+    prev_code_dir: str | None,
+    prev_kaggle_id: int | None,
+) -> tuple[str, str]:
+    user = _user_prompt(
+        day=day,
+        slot=slot,
+        code_folder=code_folder,
+        briefing_text=briefing_text,
+        prev_code_dir=prev_code_dir,
+        prev_kaggle_id=prev_kaggle_id,
+    )
+
+    # 1) Grok / xAI
+    try:
+        text = _chat_completions(
+            url="https://api.x.ai/v1/chat/completions",
+            key=secret("XAI_API_KEY"),
+            model=_env_model("KAGG_LOOP_GROK_MODEL", "grok-3"),
+            user=user,
+        )
+        if text:
+            return text, "grok"
+    except Exception as exc:
+        print("grok strategist failed:", exc)
+
+    # 2) Cursor cloud one-shot (optional)
+    try:
+        text = _cursor_strategist(user)
+        if text:
+            return text, "cursor"
+    except Exception as exc:
+        print("cursor strategist failed:", exc)
+
+    # 3) OpenAI only if credits exist — never abort the loop on 429
+    try:
+        text = _chat_completions(
+            url="https://api.openai.com/v1/chat/completions",
+            key=secret("OPENAI_API_KEY"),
+            model=_env_model("KAGG_LOOP_OPENAI_MODEL", "gpt-4o"),
+            user=user,
+        )
+        if text:
+            return text, "openai"
+    except Exception as exc:
+        print("openai strategist skipped:", exc)
+
+    return HEURISTIC + "\n## Briefing excerpt\n\n```\n%s\n```\n" % briefing_text[:6000], "heuristic"
+
+
+def ask_chatgpt(**kwargs) -> str:
+    """Back-compat wrapper."""
+    text, _source = ask_strategist(**kwargs)
+    return text
+
+
+def _user_prompt(
     *,
     day: date,
     slot: int,
@@ -63,16 +136,7 @@ def ask_chatgpt(
     prev_code_dir: str | None,
     prev_kaggle_id: int | None,
 ) -> str:
-    key = secret("OPENAI_API_KEY")
-    if not key:
-        return (
-            "# ChatGPT unavailable\n\nOPENAI_API_KEY missing. "
-            "Keep the previous bot's crash wrapper, never DROP, reserve pastures, "
-            "sheep-first, buy market wheat so shed+carried >= herd+4, delay land "
-            "until day>=10 and bank>=5000, plant cap workers*3.\n"
-        )
-
-    user = f"""Kaggriculture next submission plan.
+    return f"""Kaggriculture next submission plan.
 Date: {day.isoformat()}  slot: {slot}/5  implement folder: `{code_folder}/`
 Previous Kaggle submission id: {prev_kaggle_id}
 Previous code folder: {prev_code_dir}
@@ -90,8 +154,18 @@ Write a markdown spec with:
 
 Keep it implementable in one main.py. No RL, no opponent shop denial."""
 
+
+def _env_model(name: str, default: str) -> str:
+    import os
+
+    return (os.environ.get(name) or default).strip()
+
+
+def _chat_completions(*, url: str, key: str | None, model: str, user: str) -> str | None:
+    if not key:
+        return None
     body = {
-        "model": "gpt-4o",
+        "model": model,
         "temperature": 0.2,
         "messages": [
             {"role": "system", "content": SYSTEM},
@@ -99,7 +173,7 @@ Keep it implementable in one main.py. No RL, no opponent shop denial."""
         ],
     }
     req = urllib.request.Request(
-        "https://api.openai.com/v1/chat/completions",
+        url,
         data=json.dumps(body).encode("utf-8"),
         headers={
             "Authorization": "Bearer " + key,
@@ -107,20 +181,45 @@ Keep it implementable in one main.py. No RL, no opponent shop denial."""
         },
         method="POST",
     )
-    try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
-            payload = json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as exc:
-        err = exc.read().decode("utf-8", errors="replace")[:800]
-        raise SystemExit("OpenAI HTTP %s: %s" % (exc.code, err)) from exc
+    with urllib.request.urlopen(req, timeout=180) as resp:
+        payload = json.loads(resp.read().decode("utf-8"))
     return payload["choices"][0]["message"]["content"]
 
 
-def _merge_spec(*, day: date, slot: int, code_folder: str, chatgpt_md: str, prev_kaggle_id: int | None) -> str:
+def _cursor_strategist(user: str) -> str | None:
+    key = secret("CURSOR_API_KEY")
+    if not key:
+        return None
+    from cursor_sdk import Agent, AgentOptions, CloudAgentOptions
+
+    prompt = SYSTEM + "\n\n" + user + "\n\nReply with the markdown spec only."
+    result = Agent.prompt(
+        prompt,
+        AgentOptions(
+            api_key=key,
+            model="composer-2.5",
+            cloud=CloudAgentOptions(repos=[]),
+        ),
+    )
+    if getattr(result, "status", None) == "error":
+        return None
+    text = getattr(result, "result", None) or ""
+    return text.strip() or None
+
+
+def _merge_spec(
+    *,
+    day: date,
+    slot: int,
+    code_folder: str,
+    body: str,
+    source: str,
+    prev_kaggle_id: int | None,
+) -> str:
     return (
         "# Kaggriculture Submission %s Specification\n"
         "Date: %s · Slot: s%s · Folder: `%s/`\n\n"
         "Previous Kaggle id: %s\n"
-        "Sources: pulled live episodes + ChatGPT (`gpt-4o`).\n\n"
+        "Sources: pulled live episodes + strategist (`%s`).\n\n"
         "%s\n"
-    ) % (slot, day.isoformat(), slot, code_folder, prev_kaggle_id, chatgpt_md.strip())
+    ) % (slot, day.isoformat(), slot, code_folder, prev_kaggle_id, source, body.strip())
