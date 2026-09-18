@@ -1,0 +1,58 @@
+[
+  {
+    "ref": 56324010,
+    "date": "2026-09-18 07:17:26.243000",
+    "description": "2026-09-18-1 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56317174,
+    "date": "2026-09-18 01:10:23.510000",
+    "description": "2026-09-17-5 log-driven spec+impl",
+    "status": "SubmissionStatus.ERROR",
+    "publicScore": null
+  },
+  {
+    "ref": 56315733,
+    "date": "2026-09-18 00:01:31.373000",
+    "description": "2026-09-17-4 neuro-symbolic adaptive dairy",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56315459,
+    "date": "2026-09-17 23:46:59.477000",
+    "description": "2026-09-17-3 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56315005,
+    "date": "2026-09-17 23:05:55.933000",
+    "description": "2026-09-17-2 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56298529,
+    "date": "2026-09-17 07:28:13.123000",
+    "description": "2026-09-17-1 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56290750,
+    "date": "2026-09-17 01:14:26.437000",
+    "description": "2026-09-16-5 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56287921,
+    "date": "2026-09-16 22:00:29.867000",
+    "description": "2026-09-16-4 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  }
+]
