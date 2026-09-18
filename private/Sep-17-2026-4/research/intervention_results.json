@@ -1,0 +1,209 @@
+{
+  "mean_s3": 57402.0,
+  "mean_s4": 55149.0,
+  "rows": [
+    {
+      "seed": 1000,
+      "s3": {
+        "seed": 1000,
+        "us": 57803.0,
+        "opp": 3794.0,
+        "wheat": 764,
+        "cow_buys": 6,
+        "sheep_buys": 2,
+        "land": 1,
+        "max_cows": 4,
+        "max_sheep": 2,
+        "quads": 2,
+        "mode": null
+      },
+      "s4": {
+        "seed": 1000,
+        "us": 34872.0,
+        "opp": 3639.0,
+        "wheat": 913,
+        "cow_buys": 6,
+        "sheep_buys": 0,
+        "land": 1,
+        "max_cows": 5,
+        "max_sheep": 0,
+        "quads": 2,
+        "mode": "land_rush"
+      }
+    },
+    {
+      "seed": 1001,
+      "s3": {
+        "seed": 1001,
+        "us": 56132.0,
+        "opp": 3729.0,
+        "wheat": 721,
+        "cow_buys": 5,
+        "sheep_buys": 2,
+        "land": 1,
+        "max_cows": 4,
+        "max_sheep": 2,
+        "quads": 2,
+        "mode": null
+      },
+      "s4": {
+        "seed": 1001,
+        "us": 61710.0,
+        "opp": 3431.0,
+        "wheat": 988,
+        "cow_buys": 7,
+        "sheep_buys": 0,
+        "land": 1,
+        "max_cows": 6,
+        "max_sheep": 0,
+        "quads": 2,
+        "mode": "land_rush"
+      }
+    },
+    {
+      "seed": 1002,
+      "s3": {
+        "seed": 1002,
+        "us": 55018.0,
+        "opp": 3431.0,
+        "wheat": 811,
+        "cow_buys": 6,
+        "sheep_buys": 2,
+        "land": 1,
+        "max_cows": 5,
+        "max_sheep": 2,
+        "quads": 2,
+        "mode": null
+      },
+      "s4": {
+        "seed": 1002,
+        "us": 60131.0,
+        "opp": 3682.0,
+        "wheat": 988,
+        "cow_buys": 7,
+        "sheep_buys": 0,
+        "land": 1,
+        "max_cows": 6,
+        "max_sheep": 0,
+        "quads": 2,
+        "mode": "land_rush"
+      }
+    },
+    {
+      "seed": 42,
+      "s3": {
+        "seed": 42,
+        "us": 55124.0,
+        "opp": 3464.0,
+        "wheat": 811,
+        "cow_buys": 6,
+        "sheep_buys": 2,
+        "land": 1,
+        "max_cows": 5,
+        "max_sheep": 2,
+        "quads": 2,
+        "mode": null
+      },
+      "s4": {
+        "seed": 42,
+        "us": 57601.0,
+        "opp": 3577.0,
+        "wheat": 988,
+        "cow_buys": 7,
+        "sheep_buys": 0,
+        "land": 1,
+        "max_cows": 6,
+        "max_sheep": 0,
+        "quads": 2,
+        "mode": "land_rush"
+      }
+    },
+    {
+      "seed": 7,
+      "s3": {
+        "seed": 7,
+        "us": 59547.0,
+        "opp": 3558.0,
+        "wheat": 811,
+        "cow_buys": 6,
+        "sheep_buys": 2,
+        "land": 1,
+        "max_cows": 5,
+        "max_sheep": 2,
+        "quads": 2,
+        "mode": null
+      },
+      "s4": {
+        "seed": 7,
+        "us": 60148.0,
+        "opp": 3421.0,
+        "wheat": 988,
+        "cow_buys": 7,
+        "sheep_buys": 0,
+        "land": 1,
+        "max_cows": 6,
+        "max_sheep": 0,
+        "quads": 2,
+        "mode": "land_rush"
+      }
+    },
+    {
+      "seed": 99,
+      "s3": {
+        "seed": 99,
+        "us": 60315.0,
+        "opp": 3464.0,
+        "wheat": 817,
+        "cow_buys": 6,
+        "sheep_buys": 2,
+        "land": 1,
+        "max_cows": 5,
+        "max_sheep": 2,
+        "quads": 2,
+        "mode": null
+      },
+      "s4": {
+        "seed": 99,
+        "us": 53686.0,
+        "opp": 3600.0,
+        "wheat": 995,
+        "cow_buys": 7,
+        "sheep_buys": 0,
+        "land": 1,
+        "max_cows": 5,
+        "max_sheep": 0,
+        "quads": 2,
+        "mode": "land_rush"
+      }
+    },
+    {
+      "seed": 123,
+      "s3": {
+        "seed": 123,
+        "us": 57875.0,
+        "opp": 3441.0,
+        "wheat": 811,
+        "cow_buys": 6,
+        "sheep_buys": 2,
+        "land": 1,
+        "max_cows": 5,
+        "max_sheep": 2,
+        "quads": 2,
+        "mode": null
+      },
+      "s4": {
+        "seed": 123,
+        "us": 57895.0,
+        "opp": 3532.0,
+        "wheat": 988,
+        "cow_buys": 7,
+        "sheep_buys": 0,
+        "land": 1,
+        "max_cows": 6,
+        "max_sheep": 0,
+        "quads": 2,
+        "mode": "land_rush"
+      }
+    }
+  ]
+}

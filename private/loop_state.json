@@ -331,6 +331,21 @@
       },
       "status": "SubmissionStatus.PENDING",
       "finished_at": "2026-09-17T23:47:13.490973Z"
+    },
+    "4": {
+      "kaggle_id": 56315733,
+      "prev_kaggle_id": 56315459,
+      "spec": "private/Sep-17-2026-4",
+      "code": "2026-09-17-s4",
+      "message": "2026-09-17-4 neuro-symbolic adaptive dairy",
+      "smoke": {
+        "mean_s3": 57321.0,
+        "mean_s4": 58768.7,
+        "delta": 1447.7,
+        "n": 29
+      },
+      "status": "SubmissionStatus.PENDING",
+      "finished_at": "2026-09-18T00:01:35.355616Z"
     }
   }
 }

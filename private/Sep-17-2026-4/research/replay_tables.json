@@ -1,0 +1,2762 @@
+{
+  "meta": {
+    "us_player": "Ilakk",
+    "us_submission": 56298529,
+    "episodes": [
+      109980298,
+      110001163,
+      109987972,
+      110015745,
+      109981400
+    ],
+    "source_dir": "private/Sep-17-2026-3/logs",
+    "note": "Market BUY_PRODUCT/BUY_ANIMAL/SELL quantities are summed from dict actions {farmer,hands,market}. Money/herd from observation.farms tiles."
+  },
+  "aggregate": {
+    "n": 5,
+    "us": {
+      "BUY_PRODUCT_WHEAT": {
+        "mean": 61.0,
+        "min": 49,
+        "max": 89,
+        "values": [
+          49,
+          53,
+          61,
+          53,
+          89
+        ]
+      },
+      "BUY_ANIMAL_COW": {
+        "mean": 0.0,
+        "min": 0,
+        "max": 0,
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "BUY_ANIMAL_SHEEP": {
+        "mean": 7.6,
+        "min": 7,
+        "max": 8,
+        "values": [
+          8,
+          8,
+          7,
+          8,
+          7
+        ]
+      },
+      "BUY_LAND": {
+        "mean": 1.0,
+        "min": 1,
+        "max": 1,
+        "values": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "SELL_MILK": {
+        "mean": 0.0,
+        "min": 0,
+        "max": 0,
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "SELL_WOOL": {
+        "mean": 87.6,
+        "min": 67,
+        "max": 108,
+        "values": [
+          67,
+          92,
+          79,
+          92,
+          108
+        ]
+      },
+      "SELL_MELON": {
+        "mean": 79.6,
+        "min": 79,
+        "max": 80,
+        "values": [
+          79,
+          80,
+          80,
+          80,
+          79
+        ]
+      },
+      "SELL_STRAWBERRY": {
+        "mean": 28.2,
+        "min": 26,
+        "max": 31,
+        "values": [
+          28,
+          26,
+          31,
+          26,
+          30
+        ]
+      },
+      "SELL_WHEAT": {
+        "mean": 116.8,
+        "min": 110,
+        "max": 125,
+        "values": [
+          117,
+          116,
+          110,
+          116,
+          125
+        ]
+      },
+      "HIRE": {
+        "mean": 282.0,
+        "min": 282,
+        "max": 282,
+        "values": [
+          282,
+          282,
+          282,
+          282,
+          282
+        ]
+      },
+      "hand_nonpass": {
+        "mean": 3740.0,
+        "min": 3646,
+        "max": 3833,
+        "values": [
+          3673,
+          3829,
+          3646,
+          3833,
+          3719
+        ]
+      },
+      "BUY_SEED_STRAWBERRY": {
+        "mean": 21.4,
+        "min": 20,
+        "max": 23,
+        "values": [
+          20,
+          23,
+          20,
+          23,
+          21
+        ]
+      }
+    },
+    "opp": {
+      "BUY_PRODUCT_WHEAT": {
+        "mean": 1451.0,
+        "min": 0,
+        "max": 6402,
+        "values": [
+          0,
+          6402,
+          86,
+          302,
+          465
+        ]
+      },
+      "BUY_ANIMAL_COW": {
+        "mean": 12.0,
+        "min": 8,
+        "max": 18,
+        "values": [
+          14,
+          18,
+          9,
+          8,
+          11
+        ]
+      },
+      "BUY_ANIMAL_SHEEP": {
+        "mean": 4.4,
+        "min": 0,
+        "max": 16,
+        "values": [
+          0,
+          0,
+          0,
+          6,
+          16
+        ]
+      },
+      "BUY_LAND": {
+        "mean": 1.8,
+        "min": 1,
+        "max": 2,
+        "values": [
+          2,
+          2,
+          1,
+          2,
+          2
+        ]
+      },
+      "SELL_MILK": {
+        "mean": 198.2,
+        "min": 129,
+        "max": 267,
+        "values": [
+          267,
+          226,
+          129,
+          210,
+          159
+        ]
+      },
+      "SELL_WOOL": {
+        "mean": 38.4,
+        "min": 0,
+        "max": 124,
+        "values": [
+          0,
+          0,
+          0,
+          124,
+          68
+        ]
+      },
+      "SELL_MELON": {
+        "mean": 49.8,
+        "min": 0,
+        "max": 105,
+        "values": [
+          64,
+          80,
+          105,
+          0,
+          0
+        ]
+      },
+      "SELL_STRAWBERRY": {
+        "mean": 76.8,
+        "min": 0,
+        "max": 179,
+        "values": [
+          0,
+          91,
+          179,
+          0,
+          114
+        ]
+      },
+      "SELL_WHEAT": {
+        "mean": 1563.6,
+        "min": 0,
+        "max": 7003,
+        "values": [
+          339,
+          7003,
+          23,
+          0,
+          453
+        ]
+      },
+      "HIRE": {
+        "mean": 284.0,
+        "min": 252,
+        "max": 308,
+        "values": [
+          252,
+          279,
+          302,
+          279,
+          308
+        ]
+      },
+      "hand_nonpass": {
+        "mean": 5002.6,
+        "min": 2206,
+        "max": 6205,
+        "values": [
+          4842,
+          6113,
+          6205,
+          2206,
+          5647
+        ]
+      },
+      "BUY_SEED_STRAWBERRY": {
+        "mean": 28.2,
+        "min": 0,
+        "max": 49,
+        "values": [
+          0,
+          47,
+          45,
+          0,
+          49
+        ]
+      }
+    },
+    "delta_opp_minus_us": {
+      "BUY_PRODUCT_WHEAT": 1390.0,
+      "BUY_ANIMAL_COW": 12.0,
+      "BUY_ANIMAL_SHEEP": -3.2,
+      "BUY_LAND": 0.8,
+      "SELL_MILK": 198.2,
+      "SELL_WOOL": -49.2,
+      "SELL_MELON": -29.8,
+      "SELL_STRAWBERRY": 48.6,
+      "SELL_WHEAT": 1446.8,
+      "HIRE": 2.0,
+      "hand_nonpass": 1262.6,
+      "BUY_SEED_STRAWBERRY": 6.8
+    },
+    "banks": {
+      "us_mean": 40828.2,
+      "opp_mean": 85753.8,
+      "gap_mean": 44925.6,
+      "us": [
+        33868.0,
+        41927.0,
+        31128.0,
+        48239.0,
+        48979.0
+      ],
+      "opp": [
+        98405.0,
+        94809.0,
+        88110.0,
+        75857.0,
+        71588.0
+      ]
+    },
+    "money_trajectory_mean": {
+      "us": [
+        {
+          "day": 0,
+          "money_mean": 912.2,
+          "cows_mean": 0.0,
+          "sheep_mean": 1.0
+        },
+        {
+          "day": 5,
+          "money_mean": 253.0,
+          "cows_mean": 0.0,
+          "sheep_mean": 3.0
+        },
+        {
+          "day": 10,
+          "money_mean": 7113.0,
+          "cows_mean": 0.0,
+          "sheep_mean": 3.2
+        },
+        {
+          "day": 15,
+          "money_mean": 13430.8,
+          "cows_mean": 0.0,
+          "sheep_mean": 4.0
+        },
+        {
+          "day": 20,
+          "money_mean": 22763.6,
+          "cows_mean": 0.0,
+          "sheep_mean": 4.2
+        },
+        {
+          "day": 25,
+          "money_mean": 32770.6,
+          "cows_mean": 0.0,
+          "sheep_mean": 3.8
+        },
+        {
+          "day": 29,
+          "money_mean": 40828.2,
+          "cows_mean": 0.0,
+          "sheep_mean": 4.6
+        }
+      ],
+      "opp": [
+        {
+          "day": 0,
+          "money_mean": 902.6,
+          "cows_mean": 1.8,
+          "sheep_mean": 0.0
+        },
+        {
+          "day": 5,
+          "money_mean": 814.6,
+          "cows_mean": 3.0,
+          "sheep_mean": 0.4
+        },
+        {
+          "day": 10,
+          "money_mean": 1141.0,
+          "cows_mean": 5.6,
+          "sheep_mean": 2.0
+        },
+        {
+          "day": 15,
+          "money_mean": 9303.8,
+          "cows_mean": 8.6,
+          "sheep_mean": 1.8
+        },
+        {
+          "day": 20,
+          "money_mean": 26170.6,
+          "cows_mean": 9.0,
+          "sheep_mean": 2.0
+        },
+        {
+          "day": 25,
+          "money_mean": 55935.4,
+          "cows_mean": 9.2,
+          "sheep_mean": 2.0
+        },
+        {
+          "day": 29,
+          "money_mean": 85753.8,
+          "cows_mean": 9.6,
+          "sheep_mean": 2.0
+        }
+      ]
+    },
+    "herd_composition_mean": {
+      "us": {
+        "5": {
+          "cows_mean": 0.0,
+          "sheep_mean": 3.0,
+          "cows": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sheep": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "15": {
+          "cows_mean": 0.0,
+          "sheep_mean": 4.0,
+          "cows": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sheep": [
+            3,
+            4,
+            4,
+            4,
+            5
+          ]
+        },
+        "25": {
+          "cows_mean": 0.0,
+          "sheep_mean": 3.8,
+          "cows": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sheep": [
+            4,
+            4,
+            3,
+            4,
+            4
+          ]
+        }
+      },
+      "opp": {
+        "5": {
+          "cows_mean": 3.0,
+          "sheep_mean": 0.4,
+          "cows": [
+            2,
+            4,
+            2,
+            4,
+            3
+          ],
+          "sheep": [
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        "15": {
+          "cows_mean": 8.6,
+          "sheep_mean": 1.8,
+          "cows": [
+            11,
+            9,
+            8,
+            8,
+            7
+          ],
+          "sheep": [
+            0,
+            0,
+            0,
+            6,
+            3
+          ]
+        },
+        "25": {
+          "cows_mean": 9.2,
+          "sheep_mean": 2.0,
+          "cows": [
+            14,
+            10,
+            7,
+            8,
+            7
+          ],
+          "sheep": [
+            0,
+            0,
+            0,
+            6,
+            4
+          ]
+        }
+      }
+    }
+  },
+  "episodes": [
+    {
+      "episode": 109980298,
+      "file": "episode-109980298-replay.json",
+      "names": [
+        "Sarthak Vedant Mohanty",
+        "Ilakk manoharan"
+      ],
+      "us_index": 1,
+      "opp_name": "Sarthak Vedant Mohanty",
+      "us_name": "Ilakk manoharan",
+      "rewards": {
+        "us": 33868.0,
+        "opp": 98405.0,
+        "raw": [
+          98405.0,
+          33868.0
+        ]
+      },
+      "bank_gap": 64537.0,
+      "us": {
+        "BUY_PRODUCT_WHEAT": 49,
+        "BUY_ANIMAL_COW": 0,
+        "BUY_ANIMAL_SHEEP": 8,
+        "BUY_LAND": 1,
+        "SELL_MILK": 0,
+        "SELL_WOOL": 67,
+        "SELL_MELON": 79,
+        "SELL_STRAWBERRY": 28,
+        "SELL_WHEAT": 117,
+        "HIRE": 282,
+        "BUY_SEED_STRAWBERRY": 20,
+        "BUY_SEED_MELON": 16,
+        "BUY_SEED_WHEAT": 57,
+        "hand_nonpass": 3673,
+        "hand_total": 6439,
+        "hand_pass_rate": 0.4295698089765492,
+        "farmer_pass": 549,
+        "farmer_nonpass": 171,
+        "top_hand_actions": {
+          "PASS": 2766,
+          "NORTH": 820,
+          "WEST": 633,
+          "WATER": 437,
+          "SOUTH": 424,
+          "EAST": 409,
+          "PICKUP": 363,
+          "PLACE": 126,
+          "HARVEST": 123,
+          "COLLECT_FERTILIZER": 97,
+          "FEED": 79,
+          "PLANT": 73
+        },
+        "top_farmer_actions": {
+          "PASS": 549,
+          "PICKUP": 53,
+          "WATER": 44,
+          "NORTH": 16,
+          "WEST": 13,
+          "EAST": 12,
+          "SOUTH": 7,
+          "PLACE": 6,
+          "HARVEST": 5,
+          "FEED": 5
+        },
+        "all_market": {
+          "BUY_SEED MELON": 16,
+          "BUY_SEED WHEAT": 57,
+          "BUY_ANIMAL SHEEP": 8,
+          "HIRE": 282,
+          "BUY_PRODUCT WHEAT": 49,
+          "SELL FERTILIZER": 83,
+          "BUY_SEED STRAWBERRY": 20,
+          "SELL WHEAT": 117,
+          "SELL WOOL": 67,
+          "SELL MELON": 79,
+          "BUY_LAND": 1,
+          "SELL STRAWBERRY": 28
+        }
+      },
+      "opp": {
+        "BUY_PRODUCT_WHEAT": 0,
+        "BUY_ANIMAL_COW": 14,
+        "BUY_ANIMAL_SHEEP": 0,
+        "BUY_LAND": 2,
+        "SELL_MILK": 267,
+        "SELL_WOOL": 0,
+        "SELL_MELON": 64,
+        "SELL_STRAWBERRY": 0,
+        "SELL_WHEAT": 339,
+        "HIRE": 252,
+        "BUY_SEED_STRAWBERRY": 0,
+        "BUY_SEED_MELON": 18,
+        "BUY_SEED_WHEAT": 280,
+        "hand_nonpass": 4842,
+        "hand_total": 5787,
+        "hand_pass_rate": 0.16329704510108864,
+        "farmer_pass": 103,
+        "farmer_nonpass": 617,
+        "top_hand_actions": {
+          "PASS": 945,
+          "WEST": 875,
+          "EAST": 788,
+          "WATER": 724,
+          "NORTH": 695,
+          "SOUTH": 382,
+          "HARVEST": 272,
+          "PLANT": 249,
+          "CARE": 208,
+          "FEED": 207,
+          "COLLECT_FERTILIZER": 192,
+          "PICKUP": 183
+        },
+        "top_farmer_actions": {
+          "EAST": 111,
+          "PASS": 103,
+          "WATER": 87,
+          "NORTH": 78,
+          "WEST": 75,
+          "FEED": 45,
+          "COLLECT_FERTILIZER": 45,
+          "CARE": 44,
+          "HARVEST": 38,
+          "PLANT": 32
+        },
+        "all_market": {
+          "HIRE": 252,
+          "BUY_SEED MELON": 18,
+          "BUY_SEED WHEAT": 280,
+          "BUY_LAND": 2,
+          "SELL WHEAT": 339,
+          "BUY_ANIMAL COW": 14,
+          "SELL FERTILIZER": 236,
+          "SELL MELON": 64,
+          "SELL MILK": 267
+        }
+      },
+      "money_trajectory": {
+        "us": [
+          {
+            "day": 0,
+            "money": 916.0,
+            "cows": 0,
+            "sheep": 1,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 10,
+              "MELON": 4
+            }
+          },
+          {
+            "day": 5,
+            "money": 271.0,
+            "cows": 0,
+            "sheep": 3,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 7,
+              "MELON": 8,
+              "STRAWBERRY": 2
+            }
+          },
+          {
+            "day": 10,
+            "money": 7593.0,
+            "cows": 0,
+            "sheep": 3,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 7,
+              "MELON": 8,
+              "STRAWBERRY": 2
+            }
+          },
+          {
+            "day": 15,
+            "money": 13920.0,
+            "cows": 0,
+            "sheep": 3,
+            "quads": 2,
+            "plants": {
+              "MELON": 8,
+              "STRAWBERRY": 7,
+              "WHEAT": 9
+            }
+          },
+          {
+            "day": 20,
+            "money": 21131.0,
+            "cows": 0,
+            "sheep": 3,
+            "quads": 2,
+            "plants": {
+              "MELON": 4,
+              "STRAWBERRY": 5,
+              "WHEAT": 10
+            }
+          },
+          {
+            "day": 25,
+            "money": 29131.0,
+            "cows": 0,
+            "sheep": 4,
+            "quads": 2,
+            "plants": {
+              "STRAWBERRY": 5,
+              "WHEAT": 5
+            }
+          },
+          {
+            "day": 29,
+            "money": 33868.0,
+            "cows": 0,
+            "sheep": 5,
+            "quads": 2,
+            "plants": {
+              "STRAWBERRY": 5
+            }
+          }
+        ],
+        "opp": [
+          {
+            "day": 0,
+            "money": 790.0,
+            "cows": 0,
+            "sheep": 0,
+            "quads": 2,
+            "plants": {
+              "WHEAT": 27,
+              "MELON": 5
+            }
+          },
+          {
+            "day": 5,
+            "money": 1396.0,
+            "cows": 2,
+            "sheep": 0,
+            "quads": 2,
+            "plants": {
+              "WHEAT": 31,
+              "MELON": 5
+            }
+          },
+          {
+            "day": 10,
+            "money": 1018.0,
+            "cows": 6,
+            "sheep": 0,
+            "quads": 2,
+            "plants": {
+              "WHEAT": 31,
+              "MELON": 5
+            }
+          },
+          {
+            "day": 15,
+            "money": 7438.0,
+            "cows": 11,
+            "sheep": 0,
+            "quads": 3,
+            "plants": {
+              "WHEAT": 43,
+              "MELON": 8
+            }
+          },
+          {
+            "day": 20,
+            "money": 28807.0,
+            "cows": 13,
+            "sheep": 0,
+            "quads": 3,
+            "plants": {
+              "WHEAT": 40,
+              "MELON": 3
+            }
+          },
+          {
+            "day": 25,
+            "money": 64170.0,
+            "cows": 14,
+            "sheep": 0,
+            "quads": 3,
+            "plants": {
+              "WHEAT": 42
+            }
+          },
+          {
+            "day": 29,
+            "money": 98405.0,
+            "cows": 14,
+            "sheep": 0,
+            "quads": 3,
+            "plants": {
+              "WHEAT": 6
+            }
+          }
+        ]
+      },
+      "herd_composition": {
+        "us": {
+          "5": {
+            "cows": 0,
+            "sheep": 3,
+            "total": 3
+          },
+          "15": {
+            "cows": 0,
+            "sheep": 3,
+            "total": 3
+          },
+          "25": {
+            "cows": 0,
+            "sheep": 4,
+            "total": 4
+          }
+        },
+        "opp": {
+          "5": {
+            "cows": 2,
+            "sheep": 0,
+            "total": 2
+          },
+          "15": {
+            "cows": 11,
+            "sheep": 0,
+            "total": 11
+          },
+          "25": {
+            "cows": 14,
+            "sheep": 0,
+            "total": 14
+          }
+        }
+      },
+      "final_quads": {
+        "us": 2,
+        "opp": 3
+      }
+    },
+    {
+      "episode": 110001163,
+      "file": "episode-110001163-replay.json",
+      "names": [
+        "Ilakk manoharan",
+        "JCN2365"
+      ],
+      "us_index": 0,
+      "opp_name": "JCN2365",
+      "us_name": "Ilakk manoharan",
+      "rewards": {
+        "us": 41927.0,
+        "opp": 94809.0,
+        "raw": [
+          41927.0,
+          94809.0
+        ]
+      },
+      "bank_gap": 52882.0,
+      "us": {
+        "BUY_PRODUCT_WHEAT": 53,
+        "BUY_ANIMAL_COW": 0,
+        "BUY_ANIMAL_SHEEP": 8,
+        "BUY_LAND": 1,
+        "SELL_MILK": 0,
+        "SELL_WOOL": 92,
+        "SELL_MELON": 80,
+        "SELL_STRAWBERRY": 26,
+        "SELL_WHEAT": 116,
+        "HIRE": 282,
+        "BUY_SEED_STRAWBERRY": 23,
+        "BUY_SEED_MELON": 16,
+        "BUY_SEED_WHEAT": 62,
+        "hand_nonpass": 3829,
+        "hand_total": 6435,
+        "hand_pass_rate": 0.40497280497280497,
+        "farmer_pass": 550,
+        "farmer_nonpass": 170,
+        "top_hand_actions": {
+          "PASS": 2606,
+          "NORTH": 797,
+          "WEST": 659,
+          "EAST": 444,
+          "WATER": 443,
+          "SOUTH": 433,
+          "PICKUP": 385,
+          "HARVEST": 142,
+          "PLACE": 136,
+          "COLLECT_FERTILIZER": 112,
+          "FEED": 92,
+          "CARE": 86
+        },
+        "top_farmer_actions": {
+          "PASS": 550,
+          "PICKUP": 57,
+          "WATER": 33,
+          "EAST": 14,
+          "WEST": 11,
+          "NORTH": 11,
+          "SOUTH": 11,
+          "FEED": 8,
+          "PLACE": 7,
+          "COLLECT_FERTILIZER": 6
+        },
+        "all_market": {
+          "BUY_SEED MELON": 16,
+          "BUY_SEED WHEAT": 62,
+          "BUY_ANIMAL SHEEP": 8,
+          "HIRE": 282,
+          "BUY_PRODUCT WHEAT": 53,
+          "SELL FERTILIZER": 98,
+          "BUY_SEED STRAWBERRY": 23,
+          "SELL WHEAT": 116,
+          "SELL WOOL": 92,
+          "SELL MELON": 80,
+          "BUY_LAND": 1,
+          "SELL STRAWBERRY": 26
+        }
+      },
+      "opp": {
+        "BUY_PRODUCT_WHEAT": 6402,
+        "BUY_ANIMAL_COW": 18,
+        "BUY_ANIMAL_SHEEP": 0,
+        "BUY_LAND": 2,
+        "SELL_MILK": 226,
+        "SELL_WOOL": 0,
+        "SELL_MELON": 80,
+        "SELL_STRAWBERRY": 91,
+        "SELL_WHEAT": 7003,
+        "HIRE": 279,
+        "BUY_SEED_STRAWBERRY": 47,
+        "BUY_SEED_MELON": 17,
+        "BUY_SEED_WHEAT": 116,
+        "hand_nonpass": 6113,
+        "hand_total": 6305,
+        "hand_pass_rate": 0.030452022204599524,
+        "farmer_pass": 1,
+        "farmer_nonpass": 719,
+        "top_hand_actions": {
+          "WEST": 1355,
+          "EAST": 1216,
+          "WATER": 872,
+          "NORTH": 510,
+          "SOUTH": 413,
+          "PICKUP": 383,
+          "HARVEST": 257,
+          "CARE": 243,
+          "FEED": 232,
+          "COLLECT_FERTILIZER": 219,
+          "PASS": 192,
+          "PLANT": 146
+        },
+        "top_farmer_actions": {
+          "WATER": 257,
+          "WEST": 129,
+          "NORTH": 119,
+          "EAST": 89,
+          "HARVEST": 47,
+          "PLANT": 45,
+          "PICKUP": 13,
+          "DIG": 10,
+          "FERTILIZE": 10,
+          "PASS": 1
+        },
+        "all_market": {
+          "BUY_SEED MELON": 17,
+          "HIRE": 279,
+          "BUY_ANIMAL COW": 18,
+          "BUY_PRODUCT WHEAT": 6402,
+          "SELL WHEAT": 7003,
+          "BUY_SEED WHEAT": 116,
+          "SELL FERTILIZER": 267,
+          "BUY_SEED CARROT": 23,
+          "SELL CARROT": 2,
+          "SELL MILK": 226,
+          "BUY_SEED STRAWBERRY": 47,
+          "BUY_LAND": 2,
+          "SELL MELON": 80,
+          "BUY_PRODUCT FERTILIZER": 101,
+          "SELL STRAWBERRY": 91,
+          "BUY_SEED TOMATO": 16,
+          "BUY_ANIMAL GOOSE": 1,
+          "SELL TOMATO": 1
+        }
+      },
+      "money_trajectory": {
+        "us": [
+          {
+            "day": 0,
+            "money": 905.0,
+            "cows": 0,
+            "sheep": 1,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 10,
+              "MELON": 4
+            }
+          },
+          {
+            "day": 5,
+            "money": 254.0,
+            "cows": 0,
+            "sheep": 3,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 7,
+              "MELON": 8,
+              "STRAWBERRY": 2
+            }
+          },
+          {
+            "day": 10,
+            "money": 7703.0,
+            "cows": 0,
+            "sheep": 3,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 7,
+              "MELON": 8,
+              "STRAWBERRY": 2
+            }
+          },
+          {
+            "day": 15,
+            "money": 13154.0,
+            "cows": 0,
+            "sheep": 4,
+            "quads": 2,
+            "plants": {
+              "WHEAT": 11,
+              "MELON": 6,
+              "STRAWBERRY": 7
+            }
+          },
+          {
+            "day": 20,
+            "money": 22282.0,
+            "cows": 0,
+            "sheep": 5,
+            "quads": 2,
+            "plants": {
+              "MELON": 4,
+              "WHEAT": 11,
+              "STRAWBERRY": 5
+            }
+          },
+          {
+            "day": 25,
+            "money": 32744.0,
+            "cows": 0,
+            "sheep": 4,
+            "quads": 2,
+            "plants": {
+              "WHEAT": 8,
+              "STRAWBERRY": 5,
+              "MELON": 2
+            }
+          },
+          {
+            "day": 29,
+            "money": 41927.0,
+            "cows": 0,
+            "sheep": 5,
+            "quads": 2,
+            "plants": {
+              "STRAWBERRY": 5
+            }
+          }
+        ],
+        "opp": [
+          {
+            "day": 0,
+            "money": 804.0,
+            "cows": 3,
+            "sheep": 0,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 3,
+              "MELON": 6
+            }
+          },
+          {
+            "day": 5,
+            "money": 285.0,
+            "cows": 4,
+            "sheep": 0,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 9,
+              "MELON": 6
+            }
+          },
+          {
+            "day": 10,
+            "money": 479.0,
+            "cows": 8,
+            "sheep": 0,
+            "quads": 3,
+            "plants": {
+              "WHEAT": 19,
+              "STRAWBERRY": 8,
+              "MELON": 12
+            }
+          },
+          {
+            "day": 15,
+            "money": 12556.0,
+            "cows": 9,
+            "sheep": 0,
+            "quads": 3,
+            "plants": {
+              "STRAWBERRY": 24,
+              "WHEAT": 13,
+              "MELON": 11
+            }
+          },
+          {
+            "day": 20,
+            "money": 29152.0,
+            "cows": 9,
+            "sheep": 0,
+            "quads": 3,
+            "plants": {
+              "STRAWBERRY": 27,
+              "WHEAT": 16,
+              "MELON": 2,
+              "TOMATO": 1
+            }
+          },
+          {
+            "day": 25,
+            "money": 62866.0,
+            "cows": 10,
+            "sheep": 0,
+            "quads": 3,
+            "plants": {
+              "STRAWBERRY": 22,
+              "WHEAT": 22,
+              "TOMATO": 2
+            }
+          },
+          {
+            "day": 29,
+            "money": 94809.0,
+            "cows": 11,
+            "sheep": 0,
+            "quads": 3,
+            "plants": {
+              "TOMATO": 2,
+              "STRAWBERRY": 9
+            }
+          }
+        ]
+      },
+      "herd_composition": {
+        "us": {
+          "5": {
+            "cows": 0,
+            "sheep": 3,
+            "total": 3
+          },
+          "15": {
+            "cows": 0,
+            "sheep": 4,
+            "total": 4
+          },
+          "25": {
+            "cows": 0,
+            "sheep": 4,
+            "total": 4
+          }
+        },
+        "opp": {
+          "5": {
+            "cows": 4,
+            "sheep": 0,
+            "total": 4
+          },
+          "15": {
+            "cows": 9,
+            "sheep": 0,
+            "total": 9
+          },
+          "25": {
+            "cows": 10,
+            "sheep": 0,
+            "total": 10
+          }
+        }
+      },
+      "final_quads": {
+        "us": 2,
+        "opp": 3
+      }
+    },
+    {
+      "episode": 109987972,
+      "file": "episode-109987972-replay.json",
+      "names": [
+        "ronger zhu",
+        "Ilakk manoharan"
+      ],
+      "us_index": 1,
+      "opp_name": "ronger zhu",
+      "us_name": "Ilakk manoharan",
+      "rewards": {
+        "us": 31128.0,
+        "opp": 88110.0,
+        "raw": [
+          88110.0,
+          31128.0
+        ]
+      },
+      "bank_gap": 56982.0,
+      "us": {
+        "BUY_PRODUCT_WHEAT": 61,
+        "BUY_ANIMAL_COW": 0,
+        "BUY_ANIMAL_SHEEP": 7,
+        "BUY_LAND": 1,
+        "SELL_MILK": 0,
+        "SELL_WOOL": 79,
+        "SELL_MELON": 80,
+        "SELL_STRAWBERRY": 31,
+        "SELL_WHEAT": 110,
+        "HIRE": 282,
+        "BUY_SEED_STRAWBERRY": 20,
+        "BUY_SEED_MELON": 16,
+        "BUY_SEED_WHEAT": 55,
+        "hand_nonpass": 3646,
+        "hand_total": 6439,
+        "hand_pass_rate": 0.4337630066780556,
+        "farmer_pass": 568,
+        "farmer_nonpass": 152,
+        "top_hand_actions": {
+          "PASS": 2793,
+          "NORTH": 803,
+          "WEST": 609,
+          "WATER": 447,
+          "SOUTH": 413,
+          "EAST": 393,
+          "PICKUP": 378,
+          "PLACE": 125,
+          "HARVEST": 123,
+          "COLLECT_FERTILIZER": 102,
+          "FEED": 82,
+          "CARE": 77
+        },
+        "top_farmer_actions": {
+          "PASS": 568,
+          "PICKUP": 57,
+          "WATER": 30,
+          "NORTH": 11,
+          "SOUTH": 9,
+          "EAST": 8,
+          "PLACE": 7,
+          "FEED": 7,
+          "WEST": 6,
+          "HARVEST": 5
+        },
+        "all_market": {
+          "BUY_SEED MELON": 16,
+          "BUY_SEED WHEAT": 55,
+          "BUY_ANIMAL SHEEP": 7,
+          "HIRE": 282,
+          "BUY_PRODUCT WHEAT": 61,
+          "SELL FERTILIZER": 85,
+          "BUY_SEED STRAWBERRY": 20,
+          "SELL WHEAT": 110,
+          "SELL WOOL": 79,
+          "SELL MELON": 80,
+          "BUY_LAND": 1,
+          "SELL STRAWBERRY": 31
+        }
+      },
+      "opp": {
+        "BUY_PRODUCT_WHEAT": 86,
+        "BUY_ANIMAL_COW": 9,
+        "BUY_ANIMAL_SHEEP": 0,
+        "BUY_LAND": 1,
+        "SELL_MILK": 129,
+        "SELL_WOOL": 0,
+        "SELL_MELON": 105,
+        "SELL_STRAWBERRY": 179,
+        "SELL_WHEAT": 23,
+        "HIRE": 302,
+        "BUY_SEED_STRAWBERRY": 45,
+        "BUY_SEED_MELON": 23,
+        "BUY_SEED_WHEAT": 47,
+        "hand_nonpass": 6205,
+        "hand_total": 6832,
+        "hand_pass_rate": 0.09177400468384075,
+        "farmer_pass": 7,
+        "farmer_nonpass": 713,
+        "top_hand_actions": {
+          "WEST": 1616,
+          "EAST": 1427,
+          "NORTH": 1061,
+          "WATER": 870,
+          "PASS": 627,
+          "SOUTH": 420,
+          "HARVEST": 229,
+          "FEED": 135,
+          "CARE": 103,
+          "PLANT": 102,
+          "COLLECT_FERTILIZER": 81,
+          "FERTILIZE": 59
+        },
+        "top_farmer_actions": {
+          "WEST": 184,
+          "EAST": 133,
+          "NORTH": 130,
+          "WATER": 81,
+          "SOUTH": 64,
+          "CARE": 28,
+          "HARVEST": 23,
+          "COLLECT_FERTILIZER": 20,
+          "FEED": 13,
+          "FERTILIZE": 12
+        },
+        "all_market": {
+          "HIRE": 302,
+          "BUY_ANIMAL COW": 9,
+          "BUY_SEED MELON": 23,
+          "BUY_SEED CARROT": 2,
+          "BUY_SEED WHEAT": 47,
+          "BUY_PRODUCT WHEAT": 86,
+          "SELL FERTILIZER": 30,
+          "BUY_SEED STRAWBERRY": 45,
+          "SELL MILK": 129,
+          "BUY_LAND": 1,
+          "SELL MELON": 105,
+          "BUY_SEED TOMATO": 1,
+          "SELL STRAWBERRY": 179,
+          "SELL WHEAT": 23
+        }
+      },
+      "money_trajectory": {
+        "us": [
+          {
+            "day": 0,
+            "money": 913.0,
+            "cows": 0,
+            "sheep": 1,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 10,
+              "MELON": 4
+            }
+          },
+          {
+            "day": 5,
+            "money": 274.0,
+            "cows": 0,
+            "sheep": 3,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 7,
+              "MELON": 8,
+              "STRAWBERRY": 2
+            }
+          },
+          {
+            "day": 10,
+            "money": 6703.0,
+            "cows": 0,
+            "sheep": 3,
+            "quads": 2,
+            "plants": {
+              "WHEAT": 7,
+              "MELON": 8,
+              "STRAWBERRY": 2
+            }
+          },
+          {
+            "day": 15,
+            "money": 11713.0,
+            "cows": 0,
+            "sheep": 4,
+            "quads": 2,
+            "plants": {
+              "STRAWBERRY": 8,
+              "WHEAT": 3,
+              "MELON": 4
+            }
+          },
+          {
+            "day": 20,
+            "money": 19386.0,
+            "cows": 0,
+            "sheep": 4,
+            "quads": 2,
+            "plants": {
+              "WHEAT": 10,
+              "STRAWBERRY": 6,
+              "MELON": 4
+            }
+          },
+          {
+            "day": 25,
+            "money": 26206.0,
+            "cows": 0,
+            "sheep": 3,
+            "quads": 2,
+            "plants": {
+              "STRAWBERRY": 6,
+              "WHEAT": 5,
+              "MELON": 4
+            }
+          },
+          {
+            "day": 29,
+            "money": 31128.0,
+            "cows": 0,
+            "sheep": 5,
+            "quads": 2,
+            "plants": {
+              "STRAWBERRY": 2
+            }
+          }
+        ],
+        "opp": [
+          {
+            "day": 0,
+            "money": 417.0,
+            "cows": 1,
+            "sheep": 0,
+            "quads": 1,
+            "plants": {
+              "MELON": 17,
+              "WHEAT": 4
+            }
+          },
+          {
+            "day": 5,
+            "money": 590.0,
+            "cows": 2,
+            "sheep": 0,
+            "quads": 1,
+            "plants": {
+              "MELON": 22,
+              "WHEAT": 1
+            }
+          },
+          {
+            "day": 10,
+            "money": 530.0,
+            "cows": 3,
+            "sheep": 0,
+            "quads": 2,
+            "plants": {
+              "MELON": 8,
+              "WHEAT": 36,
+              "STRAWBERRY": 1
+            }
+          },
+          {
+            "day": 15,
+            "money": 14783.0,
+            "cows": 8,
+            "sheep": 0,
+            "quads": 2,
+            "plants": {
+              "STRAWBERRY": 38,
+              "MELON": 2
+            }
+          },
+          {
+            "day": 20,
+            "money": 18900.0,
+            "cows": 8,
+            "sheep": 0,
+            "quads": 2,
+            "plants": {
+              "STRAWBERRY": 42
+            }
+          },
+          {
+            "day": 25,
+            "money": 50317.0,
+            "cows": 7,
+            "sheep": 0,
+            "quads": 2,
+            "plants": {
+              "STRAWBERRY": 41
+            }
+          },
+          {
+            "day": 29,
+            "money": 88110.0,
+            "cows": 7,
+            "sheep": 0,
+            "quads": 2,
+            "plants": {
+              "STRAWBERRY": 19
+            }
+          }
+        ]
+      },
+      "herd_composition": {
+        "us": {
+          "5": {
+            "cows": 0,
+            "sheep": 3,
+            "total": 3
+          },
+          "15": {
+            "cows": 0,
+            "sheep": 4,
+            "total": 4
+          },
+          "25": {
+            "cows": 0,
+            "sheep": 3,
+            "total": 3
+          }
+        },
+        "opp": {
+          "5": {
+            "cows": 2,
+            "sheep": 0,
+            "total": 2
+          },
+          "15": {
+            "cows": 8,
+            "sheep": 0,
+            "total": 8
+          },
+          "25": {
+            "cows": 7,
+            "sheep": 0,
+            "total": 7
+          }
+        }
+      },
+      "final_quads": {
+        "us": 2,
+        "opp": 2
+      }
+    },
+    {
+      "episode": 110015745,
+      "file": "episode-110015745-replay.json",
+      "names": [
+        "Ilakk manoharan",
+        "AchyutKishore123"
+      ],
+      "us_index": 0,
+      "opp_name": "AchyutKishore123",
+      "us_name": "Ilakk manoharan",
+      "rewards": {
+        "us": 48239.0,
+        "opp": 75857.0,
+        "raw": [
+          48239.0,
+          75857.0
+        ]
+      },
+      "bank_gap": 27618.0,
+      "us": {
+        "BUY_PRODUCT_WHEAT": 53,
+        "BUY_ANIMAL_COW": 0,
+        "BUY_ANIMAL_SHEEP": 8,
+        "BUY_LAND": 1,
+        "SELL_MILK": 0,
+        "SELL_WOOL": 92,
+        "SELL_MELON": 80,
+        "SELL_STRAWBERRY": 26,
+        "SELL_WHEAT": 116,
+        "HIRE": 282,
+        "BUY_SEED_STRAWBERRY": 23,
+        "BUY_SEED_MELON": 16,
+        "BUY_SEED_WHEAT": 62,
+        "hand_nonpass": 3833,
+        "hand_total": 6435,
+        "hand_pass_rate": 0.40435120435120436,
+        "farmer_pass": 550,
+        "farmer_nonpass": 170,
+        "top_hand_actions": {
+          "PASS": 2602,
+          "NORTH": 797,
+          "WEST": 661,
+          "EAST": 449,
+          "WATER": 443,
+          "SOUTH": 432,
+          "PICKUP": 384,
+          "HARVEST": 142,
+          "PLACE": 135,
+          "COLLECT_FERTILIZER": 112,
+          "FEED": 91,
+          "CARE": 86
+        },
+        "top_farmer_actions": {
+          "PASS": 550,
+          "PICKUP": 57,
+          "WATER": 33,
+          "EAST": 14,
+          "WEST": 11,
+          "NORTH": 11,
+          "SOUTH": 11,
+          "FEED": 8,
+          "PLACE": 7,
+          "COLLECT_FERTILIZER": 6
+        },
+        "all_market": {
+          "BUY_SEED MELON": 16,
+          "BUY_SEED WHEAT": 62,
+          "BUY_ANIMAL SHEEP": 8,
+          "HIRE": 282,
+          "BUY_PRODUCT WHEAT": 53,
+          "SELL FERTILIZER": 98,
+          "BUY_SEED STRAWBERRY": 23,
+          "SELL WHEAT": 116,
+          "SELL WOOL": 92,
+          "SELL MELON": 80,
+          "BUY_LAND": 1,
+          "SELL STRAWBERRY": 26
+        }
+      },
+      "opp": {
+        "BUY_PRODUCT_WHEAT": 302,
+        "BUY_ANIMAL_COW": 8,
+        "BUY_ANIMAL_SHEEP": 6,
+        "BUY_LAND": 2,
+        "SELL_MILK": 210,
+        "SELL_WOOL": 124,
+        "SELL_MELON": 0,
+        "SELL_STRAWBERRY": 0,
+        "SELL_WHEAT": 0,
+        "HIRE": 279,
+        "BUY_SEED_STRAWBERRY": 0,
+        "BUY_SEED_MELON": 0,
+        "BUY_SEED_WHEAT": 0,
+        "hand_nonpass": 2206,
+        "hand_total": 6407,
+        "hand_pass_rate": 0.6556890900577493,
+        "farmer_pass": 395,
+        "farmer_nonpass": 325,
+        "top_hand_actions": {
+          "PASS": 4201,
+          "WEST": 382,
+          "NORTH": 348,
+          "PICKUP": 269,
+          "FEED": 256,
+          "CARE": 256,
+          "COLLECT_FERTILIZER": 244,
+          "EAST": 203,
+          "SOUTH": 147,
+          "HARVEST": 77,
+          "BUILD_PASTURE": 12,
+          "PLACE": 12
+        },
+        "top_farmer_actions": {
+          "PASS": 395,
+          "PICKUP": 48,
+          "FEED": 46,
+          "CARE": 46,
+          "COLLECT_FERTILIZER": 45,
+          "WEST": 42,
+          "SOUTH": 42,
+          "EAST": 30,
+          "HARVEST": 16,
+          "NORTH": 6
+        },
+        "all_market": {
+          "HIRE": 279,
+          "BUY_ANIMAL COW": 8,
+          "BUY_PRODUCT WHEAT": 302,
+          "SELL FERTILIZER": 275,
+          "BUY_LAND": 2,
+          "SELL MILK": 210,
+          "BUY_ANIMAL SHEEP": 6,
+          "SELL WOOL": 124
+        }
+      },
+      "money_trajectory": {
+        "us": [
+          {
+            "day": 0,
+            "money": 916.0,
+            "cows": 0,
+            "sheep": 1,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 10,
+              "MELON": 4
+            }
+          },
+          {
+            "day": 5,
+            "money": 261.0,
+            "cows": 0,
+            "sheep": 3,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 7,
+              "MELON": 8,
+              "STRAWBERRY": 2
+            }
+          },
+          {
+            "day": 10,
+            "money": 8056.0,
+            "cows": 0,
+            "sheep": 3,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 7,
+              "MELON": 8,
+              "STRAWBERRY": 2
+            }
+          },
+          {
+            "day": 15,
+            "money": 14367.0,
+            "cows": 0,
+            "sheep": 4,
+            "quads": 2,
+            "plants": {
+              "WHEAT": 11,
+              "MELON": 6,
+              "STRAWBERRY": 7
+            }
+          },
+          {
+            "day": 20,
+            "money": 25107.0,
+            "cows": 0,
+            "sheep": 5,
+            "quads": 2,
+            "plants": {
+              "MELON": 4,
+              "WHEAT": 11,
+              "STRAWBERRY": 5
+            }
+          },
+          {
+            "day": 25,
+            "money": 37835.0,
+            "cows": 0,
+            "sheep": 4,
+            "quads": 2,
+            "plants": {
+              "WHEAT": 8,
+              "STRAWBERRY": 5,
+              "MELON": 2
+            }
+          },
+          {
+            "day": 29,
+            "money": 48239.0,
+            "cows": 0,
+            "sheep": 5,
+            "quads": 2,
+            "plants": {
+              "STRAWBERRY": 5
+            }
+          }
+        ],
+        "opp": [
+          {
+            "day": 0,
+            "money": 1793.0,
+            "cows": 3,
+            "sheep": 0,
+            "quads": 1,
+            "plants": {}
+          },
+          {
+            "day": 5,
+            "money": 840.0,
+            "cows": 4,
+            "sheep": 0,
+            "quads": 2,
+            "plants": {}
+          },
+          {
+            "day": 10,
+            "money": 2067.0,
+            "cows": 6,
+            "sheep": 4,
+            "quads": 2,
+            "plants": {}
+          },
+          {
+            "day": 15,
+            "money": 7252.0,
+            "cows": 8,
+            "sheep": 6,
+            "quads": 3,
+            "plants": {}
+          },
+          {
+            "day": 20,
+            "money": 30416.0,
+            "cows": 8,
+            "sheep": 6,
+            "quads": 3,
+            "plants": {}
+          },
+          {
+            "day": 25,
+            "money": 52906.0,
+            "cows": 8,
+            "sheep": 6,
+            "quads": 3,
+            "plants": {}
+          },
+          {
+            "day": 29,
+            "money": 75857.0,
+            "cows": 8,
+            "sheep": 6,
+            "quads": 3,
+            "plants": {}
+          }
+        ]
+      },
+      "herd_composition": {
+        "us": {
+          "5": {
+            "cows": 0,
+            "sheep": 3,
+            "total": 3
+          },
+          "15": {
+            "cows": 0,
+            "sheep": 4,
+            "total": 4
+          },
+          "25": {
+            "cows": 0,
+            "sheep": 4,
+            "total": 4
+          }
+        },
+        "opp": {
+          "5": {
+            "cows": 4,
+            "sheep": 0,
+            "total": 4
+          },
+          "15": {
+            "cows": 8,
+            "sheep": 6,
+            "total": 14
+          },
+          "25": {
+            "cows": 8,
+            "sheep": 6,
+            "total": 14
+          }
+        }
+      },
+      "final_quads": {
+        "us": 2,
+        "opp": 3
+      }
+    },
+    {
+      "episode": 109981400,
+      "file": "episode-109981400-replay.json",
+      "names": [
+        "Ilakk manoharan",
+        "Mint120"
+      ],
+      "us_index": 0,
+      "opp_name": "Mint120",
+      "us_name": "Ilakk manoharan",
+      "rewards": {
+        "us": 48979.0,
+        "opp": 71588.0,
+        "raw": [
+          48979.0,
+          71588.0
+        ]
+      },
+      "bank_gap": 22609.0,
+      "us": {
+        "BUY_PRODUCT_WHEAT": 89,
+        "BUY_ANIMAL_COW": 0,
+        "BUY_ANIMAL_SHEEP": 7,
+        "BUY_LAND": 1,
+        "SELL_MILK": 0,
+        "SELL_WOOL": 108,
+        "SELL_MELON": 79,
+        "SELL_STRAWBERRY": 30,
+        "SELL_WHEAT": 125,
+        "HIRE": 282,
+        "BUY_SEED_STRAWBERRY": 21,
+        "BUY_SEED_MELON": 16,
+        "BUY_SEED_WHEAT": 52,
+        "hand_nonpass": 3719,
+        "hand_total": 6447,
+        "hand_pass_rate": 0.4231425469210485,
+        "farmer_pass": 512,
+        "farmer_nonpass": 208,
+        "top_hand_actions": {
+          "PASS": 2728,
+          "NORTH": 801,
+          "WEST": 642,
+          "WATER": 459,
+          "EAST": 422,
+          "PICKUP": 391,
+          "SOUTH": 386,
+          "PLACE": 132,
+          "HARVEST": 128,
+          "COLLECT_FERTILIZER": 116,
+          "FEED": 78,
+          "PLANT": 73
+        },
+        "top_farmer_actions": {
+          "PASS": 512,
+          "PICKUP": 59,
+          "PLACE": 24,
+          "FEED": 21,
+          "COLLECT_FERTILIZER": 19,
+          "CARE": 18,
+          "WATER": 17,
+          "WEST": 11,
+          "EAST": 10,
+          "NORTH": 10
+        },
+        "all_market": {
+          "BUY_SEED MELON": 16,
+          "BUY_SEED WHEAT": 52,
+          "BUY_ANIMAL SHEEP": 7,
+          "HIRE": 282,
+          "BUY_PRODUCT WHEAT": 89,
+          "SELL FERTILIZER": 101,
+          "BUY_SEED STRAWBERRY": 21,
+          "SELL WHEAT": 125,
+          "SELL WOOL": 108,
+          "SELL MELON": 79,
+          "BUY_LAND": 1,
+          "SELL STRAWBERRY": 30
+        }
+      },
+      "opp": {
+        "BUY_PRODUCT_WHEAT": 465,
+        "BUY_ANIMAL_COW": 11,
+        "BUY_ANIMAL_SHEEP": 16,
+        "BUY_LAND": 2,
+        "SELL_MILK": 159,
+        "SELL_WOOL": 68,
+        "SELL_MELON": 0,
+        "SELL_STRAWBERRY": 114,
+        "SELL_WHEAT": 453,
+        "HIRE": 308,
+        "BUY_SEED_STRAWBERRY": 49,
+        "BUY_SEED_MELON": 0,
+        "BUY_SEED_WHEAT": 78,
+        "hand_nonpass": 5647,
+        "hand_total": 6937,
+        "hand_pass_rate": 0.18595934842150785,
+        "farmer_pass": 66,
+        "farmer_nonpass": 654,
+        "top_hand_actions": {
+          "WEST": 1435,
+          "PASS": 1290,
+          "NORTH": 1138,
+          "EAST": 901,
+          "WATER": 793,
+          "SOUTH": 565,
+          "HARVEST": 247,
+          "COLLECT_FERTILIZER": 198,
+          "CARE": 177,
+          "PLANT": 100,
+          "DIG": 41,
+          "FEED": 17
+        },
+        "top_farmer_actions": {
+          "FEED": 221,
+          "NORTH": 115,
+          "WEST": 91,
+          "EAST": 75,
+          "PASS": 66,
+          "PICKUP": 53,
+          "SOUTH": 32,
+          "COLLECT_FERTILIZER": 22,
+          "CARE": 17,
+          "PLACE": 12
+        },
+        "all_market": {
+          "HIRE": 308,
+          "BUY_PRODUCT WHEAT": 465,
+          "BUY_ANIMAL COW": 11,
+          "BUY_ANIMAL SHEEP": 16,
+          "BUY_SEED WHEAT": 78,
+          "BUY_SEED STRAWBERRY": 49,
+          "SELL FERTILIZER": 211,
+          "SELL WHEAT": 453,
+          "SELL WOOL": 68,
+          "SELL MILK": 159,
+          "BUY_LAND": 2,
+          "SELL STRAWBERRY": 114,
+          "BUY_SEED CARROT": 17
+        }
+      },
+      "money_trajectory": {
+        "us": [
+          {
+            "day": 0,
+            "money": 911.0,
+            "cows": 0,
+            "sheep": 1,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 10,
+              "MELON": 4
+            }
+          },
+          {
+            "day": 5,
+            "money": 205.0,
+            "cows": 0,
+            "sheep": 3,
+            "quads": 1,
+            "plants": {
+              "STRAWBERRY": 2,
+              "MELON": 7
+            }
+          },
+          {
+            "day": 10,
+            "money": 5510.0,
+            "cows": 0,
+            "sheep": 4,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 3,
+              "STRAWBERRY": 2,
+              "MELON": 6
+            }
+          },
+          {
+            "day": 15,
+            "money": 14000.0,
+            "cows": 0,
+            "sheep": 5,
+            "quads": 2,
+            "plants": {
+              "WHEAT": 10,
+              "MELON": 7,
+              "STRAWBERRY": 8
+            }
+          },
+          {
+            "day": 20,
+            "money": 25912.0,
+            "cows": 0,
+            "sheep": 4,
+            "quads": 2,
+            "plants": {
+              "WHEAT": 10,
+              "MELON": 6,
+              "STRAWBERRY": 6
+            }
+          },
+          {
+            "day": 25,
+            "money": 37937.0,
+            "cows": 0,
+            "sheep": 4,
+            "quads": 2,
+            "plants": {
+              "WHEAT": 10,
+              "MELON": 2,
+              "STRAWBERRY": 6
+            }
+          },
+          {
+            "day": 29,
+            "money": 48979.0,
+            "cows": 0,
+            "sheep": 3,
+            "quads": 2,
+            "plants": {
+              "STRAWBERRY": 5
+            }
+          }
+        ],
+        "opp": [
+          {
+            "day": 0,
+            "money": 709.0,
+            "cows": 2,
+            "sheep": 0,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 10,
+              "STRAWBERRY": 1
+            }
+          },
+          {
+            "day": 5,
+            "money": 962.0,
+            "cows": 3,
+            "sheep": 2,
+            "quads": 1,
+            "plants": {
+              "WHEAT": 10,
+              "STRAWBERRY": 1
+            }
+          },
+          {
+            "day": 10,
+            "money": 1611.0,
+            "cows": 5,
+            "sheep": 6,
+            "quads": 2,
+            "plants": {
+              "WHEAT": 10,
+              "STRAWBERRY": 11
+            }
+          },
+          {
+            "day": 15,
+            "money": 4490.0,
+            "cows": 7,
+            "sheep": 3,
+            "quads": 3,
+            "plants": {
+              "STRAWBERRY": 31,
+              "WHEAT": 11
+            }
+          },
+          {
+            "day": 20,
+            "money": 23578.0,
+            "cows": 7,
+            "sheep": 4,
+            "quads": 3,
+            "plants": {
+              "STRAWBERRY": 30,
+              "WHEAT": 8
+            }
+          },
+          {
+            "day": 25,
+            "money": 49418.0,
+            "cows": 7,
+            "sheep": 4,
+            "quads": 3,
+            "plants": {
+              "STRAWBERRY": 30,
+              "WHEAT": 5
+            }
+          },
+          {
+            "day": 29,
+            "money": 71588.0,
+            "cows": 8,
+            "sheep": 4,
+            "quads": 3,
+            "plants": {
+              "STRAWBERRY": 5
+            }
+          }
+        ]
+      },
+      "herd_composition": {
+        "us": {
+          "5": {
+            "cows": 0,
+            "sheep": 3,
+            "total": 3
+          },
+          "15": {
+            "cows": 0,
+            "sheep": 5,
+            "total": 5
+          },
+          "25": {
+            "cows": 0,
+            "sheep": 4,
+            "total": 4
+          }
+        },
+        "opp": {
+          "5": {
+            "cows": 3,
+            "sheep": 2,
+            "total": 5
+          },
+          "15": {
+            "cows": 7,
+            "sheep": 3,
+            "total": 10
+          },
+          "25": {
+            "cows": 7,
+            "sheep": 4,
+            "total": 11
+          }
+        }
+      },
+      "final_quads": {
+        "us": 2,
+        "opp": 3
+      }
+    }
+  ],
+  "compact": [
+    {
+      "episode": 109980298,
+      "opp": {
+        "wheat": 0,
+        "cow": 14,
+        "sheep": 0,
+        "land": 2,
+        "milk": 267,
+        "wool": 0,
+        "hire": 252,
+        "hand_nonpass": 4842,
+        "farmer_pass": 103,
+        "FEED": 207,
+        "CARE": 208
+      },
+      "us_bank": 33868.0,
+      "opp_bank": 98405.0,
+      "gap": 64537.0,
+      "us": {
+        "wheat": 49,
+        "cow": 0,
+        "sheep": 8,
+        "land": 1,
+        "milk": 0,
+        "wool": 67,
+        "hire": 282,
+        "hand_nonpass": 3673,
+        "farmer_pass": 549,
+        "FEED": 79,
+        "CARE": 0
+      },
+      "money_days": {
+        "us": {
+          "0": 916.0,
+          "5": 271.0,
+          "10": 7593.0,
+          "15": 13920.0,
+          "20": 21131.0,
+          "25": 29131.0,
+          "29": 33868.0
+        },
+        "opp": {
+          "0": 790.0,
+          "5": 1396.0,
+          "10": 1018.0,
+          "15": 7438.0,
+          "20": 28807.0,
+          "25": 64170.0,
+          "29": 98405.0
+        }
+      },
+      "herd_days": {
+        "us": {
+          "5": {
+            "cows": 0,
+            "sheep": 3,
+            "total": 3
+          },
+          "15": {
+            "cows": 0,
+            "sheep": 3,
+            "total": 3
+          },
+          "25": {
+            "cows": 0,
+            "sheep": 4,
+            "total": 4
+          }
+        },
+        "opp": {
+          "5": {
+            "cows": 2,
+            "sheep": 0,
+            "total": 2
+          },
+          "15": {
+            "cows": 11,
+            "sheep": 0,
+            "total": 11
+          },
+          "25": {
+            "cows": 14,
+            "sheep": 0,
+            "total": 14
+          }
+        }
+      },
+      "final_quads": {
+        "us": 2,
+        "opp": 3
+      }
+    },
+    {
+      "episode": 110001163,
+      "opp": {
+        "wheat": 6402,
+        "cow": 18,
+        "sheep": 0,
+        "land": 2,
+        "milk": 226,
+        "wool": 0,
+        "hire": 279,
+        "hand_nonpass": 6113,
+        "farmer_pass": 1,
+        "FEED": 232,
+        "CARE": 243
+      },
+      "us_bank": 41927.0,
+      "opp_bank": 94809.0,
+      "gap": 52882.0,
+      "us": {
+        "wheat": 53,
+        "cow": 0,
+        "sheep": 8,
+        "land": 1,
+        "milk": 0,
+        "wool": 92,
+        "hire": 282,
+        "hand_nonpass": 3829,
+        "farmer_pass": 550,
+        "FEED": 92,
+        "CARE": 86
+      },
+      "money_days": {
+        "us": {
+          "0": 905.0,
+          "5": 254.0,
+          "10": 7703.0,
+          "15": 13154.0,
+          "20": 22282.0,
+          "25": 32744.0,
+          "29": 41927.0
+        },
+        "opp": {
+          "0": 804.0,
+          "5": 285.0,
+          "10": 479.0,
+          "15": 12556.0,
+          "20": 29152.0,
+          "25": 62866.0,
+          "29": 94809.0
+        }
+      },
+      "herd_days": {
+        "us": {
+          "5": {
+            "cows": 0,
+            "sheep": 3,
+            "total": 3
+          },
+          "15": {
+            "cows": 0,
+            "sheep": 4,
+            "total": 4
+          },
+          "25": {
+            "cows": 0,
+            "sheep": 4,
+            "total": 4
+          }
+        },
+        "opp": {
+          "5": {
+            "cows": 4,
+            "sheep": 0,
+            "total": 4
+          },
+          "15": {
+            "cows": 9,
+            "sheep": 0,
+            "total": 9
+          },
+          "25": {
+            "cows": 10,
+            "sheep": 0,
+            "total": 10
+          }
+        }
+      },
+      "final_quads": {
+        "us": 2,
+        "opp": 3
+      }
+    },
+    {
+      "episode": 109987972,
+      "opp": {
+        "wheat": 86,
+        "cow": 9,
+        "sheep": 0,
+        "land": 1,
+        "milk": 129,
+        "wool": 0,
+        "hire": 302,
+        "hand_nonpass": 6205,
+        "farmer_pass": 7,
+        "FEED": 135,
+        "CARE": 103
+      },
+      "us_bank": 31128.0,
+      "opp_bank": 88110.0,
+      "gap": 56982.0,
+      "us": {
+        "wheat": 61,
+        "cow": 0,
+        "sheep": 7,
+        "land": 1,
+        "milk": 0,
+        "wool": 79,
+        "hire": 282,
+        "hand_nonpass": 3646,
+        "farmer_pass": 568,
+        "FEED": 82,
+        "CARE": 77
+      },
+      "money_days": {
+        "us": {
+          "0": 913.0,
+          "5": 274.0,
+          "10": 6703.0,
+          "15": 11713.0,
+          "20": 19386.0,
+          "25": 26206.0,
+          "29": 31128.0
+        },
+        "opp": {
+          "0": 417.0,
+          "5": 590.0,
+          "10": 530.0,
+          "15": 14783.0,
+          "20": 18900.0,
+          "25": 50317.0,
+          "29": 88110.0
+        }
+      },
+      "herd_days": {
+        "us": {
+          "5": {
+            "cows": 0,
+            "sheep": 3,
+            "total": 3
+          },
+          "15": {
+            "cows": 0,
+            "sheep": 4,
+            "total": 4
+          },
+          "25": {
+            "cows": 0,
+            "sheep": 3,
+            "total": 3
+          }
+        },
+        "opp": {
+          "5": {
+            "cows": 2,
+            "sheep": 0,
+            "total": 2
+          },
+          "15": {
+            "cows": 8,
+            "sheep": 0,
+            "total": 8
+          },
+          "25": {
+            "cows": 7,
+            "sheep": 0,
+            "total": 7
+          }
+        }
+      },
+      "final_quads": {
+        "us": 2,
+        "opp": 2
+      }
+    },
+    {
+      "episode": 110015745,
+      "opp": {
+        "wheat": 302,
+        "cow": 8,
+        "sheep": 6,
+        "land": 2,
+        "milk": 210,
+        "wool": 124,
+        "hire": 279,
+        "hand_nonpass": 2206,
+        "farmer_pass": 395,
+        "FEED": 256,
+        "CARE": 256
+      },
+      "us_bank": 48239.0,
+      "opp_bank": 75857.0,
+      "gap": 27618.0,
+      "us": {
+        "wheat": 53,
+        "cow": 0,
+        "sheep": 8,
+        "land": 1,
+        "milk": 0,
+        "wool": 92,
+        "hire": 282,
+        "hand_nonpass": 3833,
+        "farmer_pass": 550,
+        "FEED": 91,
+        "CARE": 86
+      },
+      "money_days": {
+        "us": {
+          "0": 916.0,
+          "5": 261.0,
+          "10": 8056.0,
+          "15": 14367.0,
+          "20": 25107.0,
+          "25": 37835.0,
+          "29": 48239.0
+        },
+        "opp": {
+          "0": 1793.0,
+          "5": 840.0,
+          "10": 2067.0,
+          "15": 7252.0,
+          "20": 30416.0,
+          "25": 52906.0,
+          "29": 75857.0
+        }
+      },
+      "herd_days": {
+        "us": {
+          "5": {
+            "cows": 0,
+            "sheep": 3,
+            "total": 3
+          },
+          "15": {
+            "cows": 0,
+            "sheep": 4,
+            "total": 4
+          },
+          "25": {
+            "cows": 0,
+            "sheep": 4,
+            "total": 4
+          }
+        },
+        "opp": {
+          "5": {
+            "cows": 4,
+            "sheep": 0,
+            "total": 4
+          },
+          "15": {
+            "cows": 8,
+            "sheep": 6,
+            "total": 14
+          },
+          "25": {
+            "cows": 8,
+            "sheep": 6,
+            "total": 14
+          }
+        }
+      },
+      "final_quads": {
+        "us": 2,
+        "opp": 3
+      }
+    },
+    {
+      "episode": 109981400,
+      "opp": {
+        "wheat": 465,
+        "cow": 11,
+        "sheep": 16,
+        "land": 2,
+        "milk": 159,
+        "wool": 68,
+        "hire": 308,
+        "hand_nonpass": 5647,
+        "farmer_pass": 66,
+        "FEED": 17,
+        "CARE": 177
+      },
+      "us_bank": 48979.0,
+      "opp_bank": 71588.0,
+      "gap": 22609.0,
+      "us": {
+        "wheat": 89,
+        "cow": 0,
+        "sheep": 7,
+        "land": 1,
+        "milk": 0,
+        "wool": 108,
+        "hire": 282,
+        "hand_nonpass": 3719,
+        "farmer_pass": 512,
+        "FEED": 78,
+        "CARE": 0
+      },
+      "money_days": {
+        "us": {
+          "0": 911.0,
+          "5": 205.0,
+          "10": 5510.0,
+          "15": 14000.0,
+          "20": 25912.0,
+          "25": 37937.0,
+          "29": 48979.0
+        },
+        "opp": {
+          "0": 709.0,
+          "5": 962.0,
+          "10": 1611.0,
+          "15": 4490.0,
+          "20": 23578.0,
+          "25": 49418.0,
+          "29": 71588.0
+        }
+      },
+      "herd_days": {
+        "us": {
+          "5": {
+            "cows": 0,
+            "sheep": 3,
+            "total": 3
+          },
+          "15": {
+            "cows": 0,
+            "sheep": 5,
+            "total": 5
+          },
+          "25": {
+            "cows": 0,
+            "sheep": 4,
+            "total": 4
+          }
+        },
+        "opp": {
+          "5": {
+            "cows": 3,
+            "sheep": 2,
+            "total": 5
+          },
+          "15": {
+            "cows": 7,
+            "sheep": 3,
+            "total": 10
+          },
+          "25": {
+            "cows": 7,
+            "sheep": 4,
+            "total": 11
+          }
+        }
+      },
+      "final_quads": {
+        "us": 2,
+        "opp": 3
+      }
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": 1,
+      "title": "cows\u2192milk\u2192sell dominates wool",
+      "evidence": "US 0 cows/0 milk all 5; opp 8-18 cows / 129-267 milk; mean bank gap ~$45k"
+    },
+    {
+      "id": 2,
+      "title": "early cow timing (day 0-5) vs sheep-gate",
+      "evidence": "Opp first cow day 0 (4/5) or 5; US never buys cows"
+    },
+    {
+      "id": 3,
+      "title": "2nd land unlocks herd+crops",
+      "evidence": "US BUY_LAND=1\u21922 quads; opp usually BUY_LAND=2\u21923 quads (4/5)"
+    },
+    {
+      "id": 4,
+      "title": "market/grown wheat buffer for dairy feed",
+      "evidence": "US wheat buys 49-89; typical winners 86-465 (JCN churn 6402; Sarthak 0 market + grown)"
+    },
+    {
+      "id": 5,
+      "title": "milk compounds after day 15",
+      "evidence": "Mean day15\u219225: opp +$47k vs US +$19k; crossover ~day 10-20"
+    },
+    {
+      "id": 6,
+      "title": "CARE/FEED intensity on dairy herd",
+      "evidence": "Winners FEED+CARE >> US; US CARE often 0"
+    },
+    {
+      "id": 7,
+      "title": "farmer idle PASS tax",
+      "evidence": "US farmer PASS 512-568; winners often 1-100"
+    },
+    {
+      "id": 8,
+      "title": "strawberry secondary cash",
+      "evidence": "Opp strawberry sells mean 77 vs US 28"
+    },
+    {
+      "id": 9,
+      "title": "sheep placement stall under pasture/land cap",
+      "evidence": "US buys 7-8 sheep but tiles show ~3-5 through day 25"
+    },
+    {
+      "id": 10,
+      "title": "hire count not causal",
+      "evidence": "HIRE ~282 both sides; labor allocation differs"
+    }
+  ]
+}
