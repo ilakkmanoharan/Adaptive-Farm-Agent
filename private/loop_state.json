@@ -1008,6 +1008,23 @@
       },
       "status": "SubmissionStatus.PENDING",
       "finished_at": "2026-09-25T13:32:51.966586Z"
+    },
+    "3": {
+      "kaggle_id": 56557667,
+      "prev_kaggle_id": 56551831,
+      "spec": "private/Sep-25-2026-3",
+      "code": "2026-09-25-s3",
+      "message": "2026-09-25-3 log-driven spec+impl",
+      "smoke": {
+        "us": 3000.0,
+        "opp": 3583.0,
+        "statuses": [
+          "DONE",
+          "DONE"
+        ]
+      },
+      "status": "SubmissionStatus.PENDING",
+      "finished_at": "2026-09-25T18:26:03.997436Z"
     }
   }
 }
