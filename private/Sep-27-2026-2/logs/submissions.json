@@ -1,0 +1,58 @@
+[
+  {
+    "ref": 56605959,
+    "date": "2026-09-27 10:28:24.550000",
+    "description": "2026-09-27-1 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56598104,
+    "date": "2026-09-27 04:54:02.367000",
+    "description": "2026-09-26-5 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56588691,
+    "date": "2026-09-26 20:55:47.143000",
+    "description": "2026-09-26-4 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56584779,
+    "date": "2026-09-26 17:01:11.067000",
+    "description": "2026-09-26-3 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56579754,
+    "date": "2026-09-26 12:54:56.900000",
+    "description": "2026-09-26-2 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56572897,
+    "date": "2026-09-26 07:25:18.197000",
+    "description": "2026-09-26-1 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56565735,
+    "date": "2026-09-26 01:23:09.570000",
+    "description": "2026-09-25-5 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  },
+  {
+    "ref": 56561052,
+    "date": "2026-09-25 22:09:46.283000",
+    "description": "2026-09-25-4 log-driven spec+impl",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": null
+  }
+]
